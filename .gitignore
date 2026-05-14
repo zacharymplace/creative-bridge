@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# generated static documentation mirror (sources: /docs, /src/content/schemas, /docs/examples)
+/public/docs/
+
 # production
 /build
 

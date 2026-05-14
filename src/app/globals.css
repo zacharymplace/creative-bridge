@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cb-canvas: #f7f7f5;
+  --cb-surface: #ffffff;
+  --cb-ink: #0c0c0c;
+  --cb-body: #3f3f3f;
+  --cb-muted: #737373;
+  --cb-border: #e7e7e4;
+  --cb-border-strong: #d4d4d0;
+  --cb-canvas-muted: rgba(255, 255, 255, 0.72);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--cb-canvas);
+  --color-foreground: var(--cb-ink);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-display-serif);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cb-canvas);
+  color: var(--cb-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.cb-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.cb-eyebrow {
+  letter-spacing: 0.18em;
+}
+
+.cb-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .cb-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.cb-section-y {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 640px) {
+  .cb-section-y {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
 }

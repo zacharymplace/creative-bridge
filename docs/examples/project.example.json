@@ -1,0 +1,12 @@
+{
+  "name": "Neighborhood Chorus (example)",
+  "intent": "Record consent-first oral histories and release a short film crediting every participant’s chosen boundary.",
+  "creativeBridge": {
+    "schemaVersion": "0.1.0",
+    "tier": "tier-2",
+    "standardVersion": "0.1.0",
+    "repository": "https://example.org/neighborhood-chorus",
+    "humanCheckpointOwners": ["Jamie Ng"],
+    "assistDisclosureUrl": "https://example.org/neighborhood-chorus/assist"
+  }
+}

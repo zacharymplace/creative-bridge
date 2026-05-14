@@ -1,0 +1,15 @@
+{
+  "displayName": "A. River",
+  "contact": {
+    "url": "https://example.org/people/a-river"
+  },
+  "roles": ["editor", "reviewer"],
+  "creativeBridge": {
+    "schemaVersion": "0.1.0",
+    "creditPreferences": {
+      "attributionName": "A. River",
+      "attributionVisibility": "public"
+    },
+    "assistBoundaryNotes": "Machine assistance may propose alternate cuts; I approve all final editorial decisions."
+  }
+}

@@ -1,0 +1,38 @@
+# Roadmap
+
+**Current:** v0.1.1 — static site, documentation hub (`/docs`), public Standard and manifesto pages, mirrored Markdown, schemas, and examples.
+
+## Not Yet
+
+Narrow scope is a discipline, not a shortage of ambition. The following are intentionally excluded right now so the Bridge stays legible and accountable without pretending to be a platform:
+
+- **No marketplace yet** for models, prompts, or “creative assets.”
+- **No payments yet**—no billing, subscriptions, or escrow.
+- **No messaging yet**—no in-product chat, DMs, or notifications.
+- **No public collaborator tagging yet**—no social graph, discovery feeds, or profile pages.
+- **No AI asset hosting yet**—the site does not store generated media for teams.
+
+## Near term
+
+- **v0.1.x — Clarity pass:** tighten copy from community feedback; add FAQ only if it removes repeated confusion.
+- **Examples:** one exemplar `project.json` and `collaborator.json` per tier band (documentation-only).
+
+## Medium term
+
+- **Validation tooling:** small CLI or CI recipe that validates metadata against JSON Schema.
+- **Badge set:** minimal SVG badges for README use (tier + standard version), no tracking pixels.
+
+## Longer term
+
+- **Pattern library:** short, reusable brief templates and checkpoint checklists—still optional, still human-led.
+- **Localized summaries:** translate the Standard’s commitments where volunteers maintain accuracy.
+
+## Explicit non-goals
+
+- Building a generative model marketplace.
+- Automated “ethics scoring” of creative output.
+- Replacing contracts, unions, or professional guild guidance.
+
+## How to propose changes
+
+Open a discussion or pull request with: problem statement, proposed text diff, and migration impact on schema version fields.

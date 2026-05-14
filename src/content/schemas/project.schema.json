@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://creativebridge.dev/schemas/project/v0.1.json",
+  "title": "Creative Bridge Project",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["creativeBridge", "name", "intent"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-facing project name."
+    },
+    "intent": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short statement of human intent for the work (authored by a person)."
+    },
+    "creativeBridge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "tier", "standardVersion"],
+      "properties": {
+        "schemaVersion": {
+          "type": "string",
+          "pattern": "^0\\.1\\.\\d+$",
+          "description": "Semantic version for this schema document."
+        },
+        "tier": {
+          "type": "string",
+          "enum": ["tier-0", "tier-1", "tier-2", "tier-3"],
+          "description": "Highest applicable Creative Bridge project tier."
+        },
+        "standardVersion": {
+          "type": "string",
+          "pattern": "^0\\.1\\.\\d+$",
+          "description": "Version of the Creative Bridge Standard the project claims to follow."
+        },
+        "repository": {
+          "type": "string",
+          "format": "uri",
+          "description": "Canonical source repository for the project."
+        },
+        "humanCheckpointOwners": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Named people accountable for pre-release approval."
+        },
+        "assistDisclosureUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Optional link to a disclosure log or README section."
+        }
+      }
+    }
+  }
+}
