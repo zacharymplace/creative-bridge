@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BridgeReadinessSection } from "@/components/site/BridgeReadinessSection";
 import { projectTiers } from "@/content/project-tiers";
 import type { ProjectProfile, RoleWithCollaboration } from "@/content/projects/types";
 
