@@ -38,7 +38,11 @@ export function DocsIndex() {
                       href={doc.siteHref}
                       className="text-sm text-[var(--cb-body)] underline-offset-4 hover:underline"
                     >
-                      {doc.siteHref === "/standard" ? "Readable Standard page" : "Open on site"}
+                      {doc.siteHref === "/standard"
+                        ? "Readable Standard page"
+                        : doc.siteHref === "/projects"
+                          ? "Example project profiles"
+                          : "Open on site"}
                     </Link>
                   ) : null}
                 </div>

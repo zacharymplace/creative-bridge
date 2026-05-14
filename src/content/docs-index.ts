@@ -50,4 +50,13 @@ export const canonicalDocuments: CanonicalDocument[] = [
     markdownHref: "/docs/DECISIONS.md",
     markdownLabel: "Markdown",
   },
+  {
+    id: "project-profile",
+    title: "Project profile model",
+    summary:
+      "What belongs on a static public project profile—tiers, intent, roles, disclosures, and what explicitly stays out of scope.",
+    siteHref: "/projects",
+    markdownHref: "/docs/project-profile-model.md",
+    markdownLabel: "Markdown",
+  },
 ];

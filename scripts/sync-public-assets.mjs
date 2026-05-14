@@ -12,6 +12,7 @@ const markdownFiles = [
   "product-architecture.md",
   "roadmap.md",
   "DECISIONS.md",
+  "project-profile-model.md",
 ];
 await mkdir(publicDocs, { recursive: true });
 for (const name of markdownFiles) {

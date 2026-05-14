@@ -37,7 +37,7 @@ This project uses Next.js **`output: "export"`**. The deployable site is emitted
 rm -rf out && npm run build
 ```
 
-Serve `out/` with any static file host (S3, nginx, GitHub Pages, etc.). Routes include `/`, `/docs`, `/standard`, and `/manifesto`.
+Serve `out/` with any static file host (S3, nginx, GitHub Pages, etc.). Routes include `/`, `/docs`, `/projects`, `/projects/neighborhood-chorus`, `/standard`, and `/manifesto`.
 
 ---
 
@@ -45,9 +45,9 @@ Serve `out/` with any static file host (S3, nginx, GitHub Pages, etc.). Routes i
 
 | Layer | Location | Role |
 |--------|----------|------|
-| **Canonical prose** | [`docs/`](./docs/) | Human-readable Markdown (Standard, architecture, roadmap, decisions). |
+| **Canonical prose** | [`docs/`](./docs/) | Human-readable Markdown (Standard, architecture, roadmap, decisions, project profile model). |
 | **Generated mirror** | `public/docs/` (gitignored) | Built by [`scripts/sync-public-assets.mjs`](./scripts/sync-public-assets.mjs); copied into `out/docs/` so URLs like `/docs/creative-bridge-standard.md` work in static export. **Do not edit generated files.** |
-| **Typed site content** | [`src/content/`](./src/content/) | TypeScript modules backing the landing page, `/standard`, and `/manifesto`. |
+| **Typed site content** | [`src/content/`](./src/content/) | TypeScript modules backing the landing page, `/standard`, `/manifesto`, and `/projects` example profiles. |
 | **JSON Schemas** | [`src/content/schemas/`](./src/content/schemas/) | Source schemas; mirrored to `public/docs/*.schema.json` at build time. |
 
 If Markdown and typed content disagree, **resolve in git** and bump the relevant version fields (see [CONTRIBUTING.md](./CONTRIBUTING.md)).
@@ -59,11 +59,12 @@ If Markdown and typed content disagree, **resolve in git** and bump the relevant
 ```
 docs/                      # Canonical Markdown + examples
   examples/                # Example JSON payloads
-src/content/               # Typed copy, ethics standard, manifesto, tiers, docs index
+src/content/               # Typed copy, ethics standard, manifesto, tiers, docs index, projects
+src/content/projects/      # Example project profiles (typed)
 src/content/schemas/       # JSON Schema source files
 src/app/                   # Next.js App Router pages (static)
 src/components/landing/    # Landing sections
-src/components/site/       # /docs, /standard, /manifesto layouts
+src/components/site/       # /docs, /standard, /manifesto, /projects layouts
 scripts/sync-public-assets.mjs
 ```
 

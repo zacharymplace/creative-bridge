@@ -149,6 +149,7 @@ export const footerCopy = {
   navLinks: [
     { label: "Home", href: "/" },
     { label: "Docs", href: "/docs" },
+    { label: "Projects", href: "/projects" },
     { label: "Standard", href: "/standard" },
     { label: "Manifesto", href: "/manifesto" },
   ] as const,
@@ -161,6 +162,7 @@ export const footerCopy = {
     { label: "Product architecture (Markdown)", href: "/docs/product-architecture.md" },
     { label: "Roadmap (Markdown)", href: "/docs/roadmap.md" },
     { label: "Decisions log (Markdown)", href: "/docs/DECISIONS.md" },
+    { label: "Project profile model (Markdown)", href: "/docs/project-profile-model.md" },
   ],
 } as const;
 

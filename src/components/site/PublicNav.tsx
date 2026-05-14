@@ -4,6 +4,7 @@ import { siteNav } from "@/content/site-copy";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/docs", label: "Docs" },
+  { href: "/projects", label: "Projects" },
   { href: "/standard", label: "Standard" },
   { href: "/manifesto", label: "Manifesto" },
 ] as const;
