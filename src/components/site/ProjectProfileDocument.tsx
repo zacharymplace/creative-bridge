@@ -89,6 +89,10 @@ export function ProjectProfileDocument({ profile }: ProjectProfileDocumentProps)
           <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.boundaryEthicsNotes}</p>
         </section>
 
+        <div className="mt-10">
+          <BridgeReadinessSection />
+        </div>
+
         <div className="mt-12 border-t border-[var(--cb-border)] pt-10">
           <h2 className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">Example payload</h2>
           <p className="mt-3 text-sm text-[var(--cb-body)]">
