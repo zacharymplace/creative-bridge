@@ -31,6 +31,7 @@ const requiredFiles = [
   "docs/templates/collaborator-profile-template.md",
   "docs/collaborator-readiness-checklist.md",
   "docs/collaborator-profile-packet.md",
+  "docs/releases/v0.4.0.md",
 ];
 
 const missing = [];
