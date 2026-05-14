@@ -150,6 +150,8 @@ export const footerCopy = {
     { label: "Home", href: "/" },
     { label: "Docs", href: "/docs" },
     { label: "Projects", href: "/projects" },
+  { label: "Submit", href: "/submit" },
+  { label: "Submit", href: "/submit" },
     { label: "Standard", href: "/standard" },
     { label: "Manifesto", href: "/manifesto" },
   ] as const,

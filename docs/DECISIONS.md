@@ -58,3 +58,11 @@ Project profiles may include a Bridge Readiness section. This is a lightweight s
 It is not verification, certification, endorsement, or a scoring algorithm.
 
 The goal is to make profile quality visible without creating a gatekeeping or marketplace system.
+
+## Submission packet remains static
+
+The Creator Submission Packet is intentionally static.
+
+It provides templates and preparation structure without collecting submissions, creating accounts, enabling messaging, or implying review/certification.
+
+This keeps The Creative Bridge focused on standards and public trust before platform behavior.

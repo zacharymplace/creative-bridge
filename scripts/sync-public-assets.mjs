@@ -14,6 +14,10 @@ const markdownFiles = [
   "DECISIONS.md",
   "project-profile-model.md",
   "project-profile-checklist.md",
+  "templates/role-request-template.md",
+  "templates/ai-use-disclosure-template.md",
+  "templates/project-profile-template.md",
+  "submission-packet.md",
 ];
 await mkdir(publicDocs, { recursive: true });
 for (const name of markdownFiles) {

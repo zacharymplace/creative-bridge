@@ -42,3 +42,9 @@ Open a discussion or pull request with: problem statement, proposed text diff, a
 Adds a checklist and example scorecard so project profiles can be reviewed for transparency, role clarity, artist respect, and human-finished pathways.
 
 This remains static and non-certifying. It does not introduce accounts, messaging, marketplace behavior, verification, or public collaborator tagging.
+
+## v0.3.0 Creator Submission Packet
+
+Adds a static preparation packet for creators to describe AI-assisted projects before any outreach or collaboration.
+
+This keeps the project non-platform: no forms, accounts, messaging, payments, marketplace behavior, certification, or public collaborator tagging.
