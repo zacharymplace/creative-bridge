@@ -21,7 +21,9 @@ const markdownFiles = [
 ];
 await mkdir(publicDocs, { recursive: true });
 for (const name of markdownFiles) {
-  await copyFile(join(root, "docs", name), join(publicDocs, name));
+  const destination = join(publicDocs, name);
+  await mkdir(dirname(destination), { recursive: true });
+  await copyFile(join(root, "docs", name), destination);
 }
 
 const schemaDir = join(root, "src", "content", "schemas");
