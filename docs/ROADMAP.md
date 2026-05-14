@@ -48,3 +48,9 @@ This remains static and non-certifying. It does not introduce accounts, messagin
 Adds a static preparation packet for creators to describe AI-assisted projects before any outreach or collaboration.
 
 This keeps the project non-platform: no forms, accounts, messaging, payments, marketplace behavior, certification, or public collaborator tagging.
+
+## v0.4.0 Collaborator Profile Packet
+
+Adds a static collaborator-side packet so artists and other contributors can clarify role lanes, AI-adjacent comfort, credit expectations, contact boundaries, and opt-in discovery preferences.
+
+This remains non-platform: no accounts, public profiles, messaging, marketplace behavior, hiring workflows, public collaborator tagging, or implied project attachment.

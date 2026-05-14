@@ -26,6 +26,11 @@ const requiredFiles = [
   "docs/templates/project-profile-template.md",
   "docs/templates/ai-use-disclosure-template.md",
   "docs/templates/role-request-template.md",
+  "docs/templates/collaboration-boundaries-template.md",
+  "docs/templates/role-interest-template.md",
+  "docs/templates/collaborator-profile-template.md",
+  "docs/collaborator-readiness-checklist.md",
+  "docs/collaborator-profile-packet.md",
 ];
 
 const missing = [];

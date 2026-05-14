@@ -66,3 +66,9 @@ The Creator Submission Packet is intentionally static.
 It provides templates and preparation structure without collecting submissions, creating accounts, enabling messaging, or implying review/certification.
 
 This keeps The Creative Bridge focused on standards and public trust before platform behavior.
+
+## Collaborator packet remains opt-in and non-platform
+
+The Collaborator Profile Packet mirrors the creator-side submission packet without creating public profiles, accounts, messaging, or hiring behavior.
+
+It exists to protect collaborators from being treated as interchangeable labor and to make consent, credit, scope, and AI-adjacent comfort visible before outreach.
