@@ -56,6 +56,7 @@ export const canonicalDocuments: CanonicalDocument[] = [
     summary:
       "A lightweight self-assessment for transparent, collaboration-ready project profiles.",
     markdownHref: "/docs/project-profile-checklist.md",
+    markdownLabel: "Checklist",
     siteHref: "/projects/neighborhood-chorus",
   },
   {

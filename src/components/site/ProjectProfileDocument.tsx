@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { neighborhoodChorusScorecard } from "@/content/projects/neighborhood-chorus-scorecard";
 import { projectTiers } from "@/content/project-tiers";
 import type { ProjectProfile, RoleWithCollaboration } from "@/content/projects/types";
 
