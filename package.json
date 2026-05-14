@@ -1,14 +1,16 @@
 {
   "name": "creative-bridge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "prebuild": "node scripts/sync-public-assets.mjs",
     "predev": "node scripts/sync-public-assets.mjs",
+    "docs:sync": "node scripts/sync-public-assets.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check": "npm run lint && npm run build"
   },
   "dependencies": {
     "next": "16.2.6",

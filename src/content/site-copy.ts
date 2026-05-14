@@ -9,7 +9,7 @@ export const siteMeta = {
   title: "The Creative Bridge",
   description:
     "AI-assisted creation should help more people reach human collaboration, not replace artists.",
-  versionLabel: "v0.1.1",
+  versionLabel: "v0.1.2",
 } as const;
 
 export const siteNav = {
@@ -136,7 +136,7 @@ export const manifestoCtaCopy = {
     "Technology should widen the doorway to collaboration—not lock artists out of their own field.",
   fullPageLink: { label: "Read on its own page", href: "/manifesto" },
   cta: {
-    label: "Start at v0.1.1",
+    label: "Start at v0.1.2",
     href: "#how",
     supporting:
       "Documentation, schemas, and examples are mirrored on the static site so you can verify what you ship—without signing in to anything.",
@@ -146,13 +146,21 @@ export const manifestoCtaCopy = {
 export const footerCopy = {
   tagline: "Human collaboration over machine substitution.",
   colophon: "© The Creative Bridge contributors. Content and schemas are versioned in-repo.",
-  links: [
-    { label: "Documentation", href: "/docs" },
-    { label: "Standard (site)", href: "/standard" },
+  navLinks: [
+    { label: "Home", href: "/" },
+    { label: "Docs", href: "/docs" },
+    { label: "Standard", href: "/standard" },
     { label: "Manifesto", href: "/manifesto" },
+  ] as const,
+  githubPlaceholder: {
+    label: "GitHub",
+    title: "Public repository URL not set—replace in footer when available.",
+  } as const,
+  links: [
     { label: "Creative Bridge Standard (Markdown)", href: "/docs/creative-bridge-standard.md" },
     { label: "Product architecture (Markdown)", href: "/docs/product-architecture.md" },
     { label: "Roadmap (Markdown)", href: "/docs/roadmap.md" },
+    { label: "Decisions log (Markdown)", href: "/docs/DECISIONS.md" },
   ],
 } as const;
 

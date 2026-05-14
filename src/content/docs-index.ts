@@ -43,4 +43,11 @@ export const canonicalDocuments: CanonicalDocument[] = [
     markdownHref: "/docs/roadmap.md",
     markdownLabel: "Markdown",
   },
+  {
+    id: "decisions",
+    title: "Decisions log",
+    summary: "Durable architecture and content decisions—why the repo is shaped the way it is.",
+    markdownHref: "/docs/DECISIONS.md",
+    markdownLabel: "Markdown",
+  },
 ];

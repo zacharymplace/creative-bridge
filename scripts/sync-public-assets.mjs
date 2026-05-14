@@ -7,7 +7,12 @@ const publicDocs = join(root, "public", "docs");
 
 await rm(publicDocs, { recursive: true, force: true });
 
-const markdownFiles = ["creative-bridge-standard.md", "product-architecture.md", "roadmap.md"];
+const markdownFiles = [
+  "creative-bridge-standard.md",
+  "product-architecture.md",
+  "roadmap.md",
+  "DECISIONS.md",
+];
 await mkdir(publicDocs, { recursive: true });
 for (const name of markdownFiles) {
   await copyFile(join(root, "docs", name), join(publicDocs, name));

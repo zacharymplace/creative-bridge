@@ -11,7 +11,7 @@ export type ManifestoSection = {
 
 export const manifestoMeta = {
   title: "The Creative Bridge Manifesto",
-  version: "0.1.1",
+  version: "0.1.2",
   lastReviewed: "2026-05-14",
 } as const;
 
@@ -55,5 +55,5 @@ export const manifestoSections: ManifestoSection[] = [
 
 export const manifestoClosing = {
   title: "What we build next",
-  body: "v0.1.1 adds readable public routes for the Standard and manifesto, a documentation index, and mirrored Markdown, schemas, and examples—still static, still accountable to humans.",
+  body: "v0.1.2 hardens the public repository—README, contributing guide, changelog, and a decisions log—while keeping the site static, small, and accountable to humans.",
 } as const;

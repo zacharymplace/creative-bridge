@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Creative Bridge
 
-## Getting Started
+**The Creative Bridge** is a small, versioned public standard for creative work in the age of machine assistance. It names how humans stay accountable, how credit and consent stay legible, and how AI is bounded so it **helps people reach collaboration**—not replace artists.
 
-First, run the development server:
+**Current status:** **v0.1.1 public draft** (the Standard and manifesto are draft-quality language; the repository may ship tooling releases such as **v0.1.2** without implying the ethics text is final—see [CHANGELOG.md](./CHANGELOG.md)).
+
+**Core thesis:** AI-assisted creation should help more people reach **human collaboration**, not replace artists.
+
+---
+
+## Local development
+
+Prerequisites: **Node.js 20+** and npm.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). `predev` runs `docs:sync` so mirrored files exist under `public/docs/` during development.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other useful commands:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint          # ESLint
+npm run docs:sync     # Regenerate public/docs from sources
+npm run check         # lint + production build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Static export
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses Next.js **`output: "export"`**. The deployable site is emitted to **`out/`**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+rm -rf out && npm run build
+```
 
-## Deploy on Vercel
+Serve `out/` with any static file host (S3, nginx, GitHub Pages, etc.). Routes include `/`, `/docs`, `/standard`, and `/manifesto`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Source of truth
+
+| Layer | Location | Role |
+|--------|----------|------|
+| **Canonical prose** | [`docs/`](./docs/) | Human-readable Markdown (Standard, architecture, roadmap, decisions). |
+| **Generated mirror** | `public/docs/` (gitignored) | Built by [`scripts/sync-public-assets.mjs`](./scripts/sync-public-assets.mjs); copied into `out/docs/` so URLs like `/docs/creative-bridge-standard.md` work in static export. **Do not edit generated files.** |
+| **Typed site content** | [`src/content/`](./src/content/) | TypeScript modules backing the landing page, `/standard`, and `/manifesto`. |
+| **JSON Schemas** | [`src/content/schemas/`](./src/content/schemas/) | Source schemas; mirrored to `public/docs/*.schema.json` at build time. |
+
+If Markdown and typed content disagree, **resolve in git** and bump the relevant version fields (see [CONTRIBUTING.md](./CONTRIBUTING.md)).
+
+---
+
+## Content structure (overview)
+
+```
+docs/                      # Canonical Markdown + examples
+  examples/                # Example JSON payloads
+src/content/               # Typed copy, ethics standard, manifesto, tiers, docs index
+src/content/schemas/       # JSON Schema source files
+src/app/                   # Next.js App Router pages (static)
+src/components/landing/    # Landing sections
+src/components/site/       # /docs, /standard, /manifesto layouts
+scripts/sync-public-assets.mjs
+```
+
+---
+
+## Schema locations
+
+- **Project envelope:** [`src/content/schemas/project.schema.json`](./src/content/schemas/project.schema.json) → mirrored as **`/docs/project.schema.json`**
+- **Collaborator envelope:** [`src/content/schemas/collaborator.schema.json`](./src/content/schemas/collaborator.schema.json) → **`/docs/collaborator.schema.json`**
+- **Examples:** [`docs/examples/`](./docs/examples/) → **`/docs/examples/*.json`**
+
+---
+
+## Non-goals
+
+- No marketplace, payments, messaging, public collaborator tagging, or hosted AI asset pipeline (see [docs/roadmap.md](./docs/roadmap.md) **Not Yet**).
+- No backend, accounts, or auth in this repository.
+- No “ethics washing”: the Bridge is language and artifacts you can adopt voluntarily—not a certification authority.
+
+---
+
+## License
+
+**License:** *Placeholder*—specify SPDX identifier and copyright holders before first wide redistribution (e.g. MIT, Apache-2.0, or CC BY 4.0 for prose-only portions). Until then, assume **all rights reserved** unless you add a `LICENSE` file stating otherwise.
+
+---
+
+## Further reading
+
+- [CONTRIBUTING.md](./CONTRIBUTING.md) — how to propose changes.
+- [CHANGELOG.md](./CHANGELOG.md) — release history.
+- [docs/DECISIONS.md](./docs/DECISIONS.md) — architecture and content decisions.

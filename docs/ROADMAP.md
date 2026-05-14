@@ -1,6 +1,6 @@
 # Roadmap
 
-**Current:** v0.1.1 — static site, documentation hub (`/docs`), public Standard and manifesto pages, mirrored Markdown, schemas, and examples.
+**Current:** v0.1.2 — static site, documentation hub, mirrored `/docs` artifacts, contributing and changelog for a trustworthy public standard repo.
 
 ## Not Yet
 
