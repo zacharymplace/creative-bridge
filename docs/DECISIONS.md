@@ -50,3 +50,11 @@ Short log of **durable** choices for The Creative Bridge repository. For release
 
 - **Decision:** Any notion of **dream teams** or similar is treated as an **opt-in, private aspiration** between people who already work together—not as **public collaborator tagging**, discovery feeds, or social graph features in this project.
 - **Why:** Public tagging optimizes for scale at the expense of consent, context, and credit; the Bridge prioritizes legibility and human relationships.
+
+## Project profile readiness is self-assessment, not certification
+
+Project profiles may include a Bridge Readiness section. This is a lightweight self-assessment against the Creative Bridge standard.
+
+It is not verification, certification, endorsement, or a scoring algorithm.
+
+The goal is to make profile quality visible without creating a gatekeeping or marketplace system.
