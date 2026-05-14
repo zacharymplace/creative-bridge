@@ -9,7 +9,7 @@ export const siteMeta = {
   title: "The Creative Bridge",
   description:
     "AI-assisted creation should help more people reach human collaboration, not replace artists.",
-  versionLabel: "v0.1.2",
+  versionLabel: "v0.2.1",
 } as const;
 
 export const siteNav = {
@@ -136,7 +136,7 @@ export const manifestoCtaCopy = {
     "Technology should widen the doorway to collaboration—not lock artists out of their own field.",
   fullPageLink: { label: "Read on its own page", href: "/manifesto" },
   cta: {
-    label: "Start at v0.1.2",
+    label: "Start at v0.2.1",
     href: "#how",
     supporting:
       "Documentation, schemas, and examples are mirrored on the static site so you can verify what you ship—without signing in to anything.",

@@ -2,7 +2,7 @@
 
 All notable changes to this repository are documented here. The project favors **small, reviewable releases**.
 
-## [0.1.2] - 2026-05-14
+## [0.2.1] - 2026-05-14
 
 ### Added
 
