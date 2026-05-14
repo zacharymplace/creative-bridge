@@ -97,3 +97,19 @@ scripts/sync-public-assets.mjs
 - [CONTRIBUTING.md](./CONTRIBUTING.md) — how to propose changes.
 - [CHANGELOG.md](./CHANGELOG.md) — release history.
 - [docs/DECISIONS.md](./docs/DECISIONS.md) — architecture and content decisions.
+
+
+## Static export QA
+
+After building, verify expected exported routes, docs, schemas, examples, and templates:
+
+```bash
+npm run build
+npm run qa:static
+```
+
+Or run both together:
+
+```bash
+npm run check:static
+```
