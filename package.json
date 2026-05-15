@@ -1,6 +1,6 @@
 {
   "name": "creative-bridge",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "private": true,
   "scripts": {
     "prebuild": "node scripts/sync-public-assets.mjs",
