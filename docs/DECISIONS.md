@@ -96,3 +96,7 @@ This helps prevent future drift toward style impersonation, hidden AI use, publi
 The Review Rubric Layer exists to improve accountability and clarity without creating certification, endorsement, verification, ranking systems, or hidden moderation.
 
 The project should become easier to inspect without claiming institutional authority.
+
+## System map before platform expansion
+
+The System Map was added before platform features so the public can understand the full trust and governance structure before capability expands.

@@ -78,3 +78,9 @@ This makes project boundaries easier to audit before any future platform feature
 Adds a public rubric for evaluating project profiles against transparency, consent boundaries, role clarity, credit specificity, AI-use disclosure, human-finished pathways, and rejected-pattern risk.
 
 This keeps review visible without creating artificial authority.
+
+## v0.9.0 System Map
+
+Adds a public system map connecting all major layers into one readable overview.
+
+This makes the standard easier to understand as an operating system rather than a collection of disconnected pages.
