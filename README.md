@@ -1,5 +1,7 @@
 # The Creative Bridge
 
+Live site: https://creative-bridge-wheat.vercel.app
+
 **The Creative Bridge** is a small, versioned public standard for creative work in the age of machine assistance. It names how humans stay accountable, how credit and consent stay legible, and how AI is bounded so it **helps people reach collaboration**—not replace artists.
 
 **Current status:** **v0.1.1 public draft** (the Standard and manifesto are draft-quality language; the repository may ship tooling releases such as **v0.4.0** without implying the ethics text is final—see [CHANGELOG.md](./CHANGELOG.md)).
