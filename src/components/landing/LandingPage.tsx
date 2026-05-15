@@ -8,6 +8,7 @@ import { MobileNav } from "./MobileNav";
 import { PositionSection } from "./PositionSection";
 import { ProblemSection } from "./ProblemSection";
 import { SiteFooter } from "./SiteFooter";
+import { StartHereSection } from "./StartHereSection";
 import { StandardSection } from "./StandardSection";
 import { TiersSection } from "./TiersSection";
 import { TransparencySection } from "./TransparencySection";
@@ -23,6 +24,7 @@ export function LandingPage() {
       </a>
       <HeroSection />
       <MobileNav />
+      <StartHereSection />
       <main>
         <PositionSection />
         <ProblemSection />
