@@ -54,3 +54,9 @@ This keeps the project non-platform: no forms, accounts, messaging, payments, ma
 Adds a static collaborator-side packet so artists and other contributors can clarify role lanes, AI-adjacent comfort, credit expectations, contact boundaries, and opt-in discovery preferences.
 
 This remains non-platform: no accounts, public profiles, messaging, marketplace behavior, hiring workflows, public collaborator tagging, or implied project attachment.
+
+## v0.5.0 Public Trust Layer
+
+Adds a public trust layer so the project’s anti-replacement stance, disclosure model, consent boundaries, credit boundaries, accessibility framing, and non-platform discipline are visible in one place.
+
+This makes the project easier to inspect and criticize before any platform behavior exists.

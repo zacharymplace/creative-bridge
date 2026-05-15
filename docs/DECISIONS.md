@@ -72,3 +72,9 @@ This keeps The Creative Bridge focused on standards and public trust before plat
 The Collaborator Profile Packet mirrors the creator-side submission packet without creating public profiles, accounts, messaging, or hiring behavior.
 
 It exists to protect collaborators from being treated as interchangeable labor and to make consent, credit, scope, and AI-adjacent comfort visible before outreach.
+
+## Trust layer before platform capability
+
+The project now includes a Public Trust Layer before adding any accounts, submissions, messaging, marketplace behavior, or public profiles.
+
+This is intentional: the standard should become easier to inspect and govern before the product becomes more capable.

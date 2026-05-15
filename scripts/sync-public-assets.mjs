@@ -24,6 +24,8 @@ const markdownFiles = [
   "collaborator-readiness-checklist.md",
   "collaborator-profile-packet.md",
   "releases/v0.4.0.md",
+  "releases/v0.5.0.md",
+  "trust-layer.md",
 ];
 await mkdir(publicDocs, { recursive: true });
 for (const name of markdownFiles) {
