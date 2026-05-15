@@ -66,3 +66,9 @@ This makes the project easier to inspect and criticize before any platform behav
 Adds static governance so future changes can be reviewed against versioning rules, change proposal expectations, rejected patterns, and escalation triggers.
 
 This keeps accounts, submissions, messaging, payments, public profiles, marketplace behavior, certification, verification, and AI asset hosting behind explicit review.
+
+## v0.7.0 Rejected Patterns Registry
+
+Adds a public registry of behaviors the standard explicitly rejects.
+
+This makes project boundaries easier to audit before any future platform features are considered.

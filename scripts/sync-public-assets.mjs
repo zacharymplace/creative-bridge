@@ -26,6 +26,8 @@ const markdownFiles = [
   "releases/v0.4.0.md",
   "releases/v0.5.0.md",
   "releases/v0.6.0.md",
+  "releases/v0.7.0.md",
+  "rejected-patterns.md",
   "governance-layer.md",
   "trust-layer.md",
 ];

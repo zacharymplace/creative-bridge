@@ -84,3 +84,9 @@ This is intentional: the standard should become easier to inspect and govern bef
 The Governance Layer was added before any platform capability.
 
 This ensures future features that introduce accounts, submissions, public profiles, messaging, payments, marketplace behavior, public discovery, scoring, certification, verification, endorsement, or AI asset hosting require explicit review before implementation.
+
+## Rejected patterns are public
+
+The Rejected Patterns Registry makes the project’s refusal points public.
+
+This helps prevent future drift toward style impersonation, hidden AI use, public collaborator tagging, implied attachment, fake certification, vague credit, pressure-based recruitment, AI asset dumping, or marketplace behavior disguised as preparation.
