@@ -14,7 +14,7 @@ const requiredFiles = [
   "projects/neighborhood-chorus.html",
   "docs/creative-bridge-standard.md",
   "docs/product-architecture.md",
-  "docs/ROADMAP.md",
+  "docs/roadmap.md",
   "docs/DECISIONS.md",
   "docs/project-profile-model.md",
   "docs/project-profile-checklist.md",

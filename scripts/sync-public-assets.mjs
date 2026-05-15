@@ -10,7 +10,7 @@ await rm(publicDocs, { recursive: true, force: true });
 const markdownFiles = [
   "creative-bridge-standard.md",
   "product-architecture.md",
-  "ROADMAP.md",
+  "roadmap.md",
   "DECISIONS.md",
   "project-profile-model.md",
   "project-profile-checklist.md",
