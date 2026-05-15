@@ -44,7 +44,7 @@ const requiredFiles = [
   "docs/releases/v1.3.0.md",
   "docs/releases/v1.4.0.md",
   "docs/releases/v1.5.0.md",
-  "docs/stress-tests.md",
+  "docs/stress-tests/governance-stress-tests.md",
   "stress-tests.html",
   "docs/incentive-drift-map.md",
   "incentive-drift.html",
