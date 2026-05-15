@@ -1,0 +1,40 @@
+export const reviewOsFreeze = {
+  title: "Public Review Operating System Freeze",
+  version: "2.0.0",
+  summary:
+    "A stable freeze of The Creative Bridge public review and governance operating system before adding the Whyfiles rationale layer.",
+  position:
+    "The review system is now mature enough to freeze as a public operating model. Future additions should explain, test, or improve the system without weakening its core constraints.",
+  frozenSystem: [
+    { title: "Standard", href: "/standard" },
+    { title: "Manifesto", href: "/manifesto" },
+    { title: "Trust Layer", href: "/trust" },
+    { title: "Governance Layer", href: "/governance" },
+    { title: "Rejected Patterns Registry", href: "/rejected-patterns" },
+    { title: "Review Rubric", href: "/review-rubric" },
+    { title: "System Map", href: "/system-map" },
+    { title: "Public Review", href: "/review" },
+    { title: "Review Intake Guide", href: "/review-intake" },
+    { title: "Reviewer Brief Pack", href: "/reviewer-briefs" },
+    { title: "Outreach Kit", href: "/outreach-kit" },
+    { title: "Review Response Log", href: "/review-response-log" },
+    { title: "Abuse Case Library", href: "/abuse-cases" },
+    { title: "Incentive Drift Map", href: "/incentive-drift" },
+    { title: "Governance Stress Tests", href: "/stress-tests" },
+    { title: "Creator Submission Packet", href: "/submit" },
+    { title: "Collaborator Profile Packet", href: "/collaborate" },
+    { title: "Example Project Profile", href: "/projects/neighborhood-chorus" },
+  ],
+  freezePrinciples: [
+    "Review exists to make the standard harder to misuse.",
+    "Criticism is more useful than approval.",
+    "Public review must remain separate from feature intake.",
+    "Readiness and rubric language must not become certification.",
+    "Rejected patterns remain active constraints.",
+    "Abuse cases and incentive drift should inform future changes.",
+    "Platform behavior remains gated by governance.",
+    "Future rationale should be traceable through Whyfiles.",
+  ],
+  nextLayer:
+    "Whyfiles should explain why each major rule, rejection, guardrail, and design choice exists.",
+} as const;
