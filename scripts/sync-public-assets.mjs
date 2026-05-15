@@ -43,6 +43,7 @@ const markdownFiles = [
   "releases/v2.0.0.md",
   "releases/v2.1.0.md",
   "releases/v2.2.0.md",
+  "releases/v2.3.0.md",
   "whyfiles/platform-capability-gating.md",
   "whyfiles/review-response-traceability.md",
   "whyfiles/collaborator-credit.md",

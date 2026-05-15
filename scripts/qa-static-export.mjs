@@ -51,6 +51,7 @@ const requiredFiles = [
   "docs/releases/v2.0.0.md",
   "docs/releases/v2.1.0.md",
   "docs/releases/v2.2.0.md",
+  "docs/releases/v2.3.0.md",
   "docs/whyfiles/platform-capability-gating.md",
   "docs/whyfiles/review-response-traceability.md",
   "docs/whyfiles/collaborator-credit.md",

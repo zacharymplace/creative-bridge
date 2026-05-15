@@ -6,6 +6,7 @@ export type Whyfile = {
   whatCouldGoWrong: string;
   boundaryCreated: string;
   related: string[];
+  category: "Disclosure" | "Consent" | "Credit" | "Governance" | "Review" | "Platform";
 };
 
 export const whyfilesMeta = {
@@ -19,7 +20,8 @@ export const whyfilesMeta = {
 
 export const whyfiles: Whyfile[] = [
   {
-    slug: "ai-disclosure",
+    slug: "ai-disclosure"
+    category: "Disclosure",,
     title: "Why AI-assisted work needs disclosure",
     claim:
       "Material AI assistance should be disclosed when it shapes the creative process, pitch, production path, or public claims around the work.",
@@ -32,7 +34,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Trust Layer", "Review Rubric", "Abuse Case Library", "Rejected Patterns Registry"],
   },
   {
-    slug: "dream-team-privacy",
+    slug: "dream-team-privacy"
+    category: "Consent",,
     title: "Why dream-team outreach must stay private and opt-in",
     claim:
       "Dream-team references should stay private unless a person has explicitly opted in or agreed to be publicly associated with the project.",
@@ -45,7 +48,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Rejected Patterns Registry", "Abuse Case Library", "Collaborator Profile Packet", "Governance Layer"],
   },
   {
-    slug: "readiness-is-not-certification",
+    slug: "readiness-is-not-certification"
+    category: "Review",,
     title: "Why readiness is not certification",
     claim:
       "Readiness checks and review rubrics are self-assessment tools, not certification, verification, endorsement, approval, or safety labels.",
@@ -58,7 +62,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Review Rubric", "Review Response Log", "Governance Stress Tests", "Rejected Patterns Registry"],
   },
   {
-    slug: "marketplace-gating",
+    slug: "marketplace-gating"
+    category: "Platform",,
     title: "Why marketplace behavior is gated",
     claim:
       "Accounts, messaging, payments, public profiles, matching, rankings, and marketplace behavior require explicit governance review before implementation.",
@@ -71,7 +76,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Governance Layer", "Incentive Drift Map", "Abuse Case Library", "Public Review Operating System Freeze"],
   },
   {
-    slug: "static-first",
+    slug: "static-first"
+    category: "Platform",,
     title: "Why static-first matters",
     claim:
       "The Creative Bridge should remain static-first until its public standard, review system, and governance boundaries are strong enough to justify more capability.",
@@ -84,7 +90,8 @@ export const whyfiles: Whyfile[] = [
     related: ["System Map", "Public Standard Freeze", "Public Review Operating System Freeze", "Governance Layer"],
   },
   {
-    slug: "criticism-over-approval",
+    slug: "criticism-over-approval"
+    category: "Review",,
     title: "Why review asks for criticism over approval",
     claim:
       "Public review should ask for focused criticism, not praise, promotion, endorsement, or vague approval.",
@@ -97,7 +104,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Public Review", "Review Intake Guide", "Reviewer Brief Pack", "Review Response Log"],
   },
   {
-    slug: "public-tagging",
+    slug: "public-tagging"
+    category: "Consent",,
     title: "Why public collaborator tagging is rejected",
     claim:
       "People should not be publicly tagged, named, implied, or used as social proof for a project unless they explicitly consent.",
@@ -110,7 +118,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Rejected Patterns Registry", "Abuse Case Library", "Collaborator Profile Packet", "Review Intake Guide"],
   },
   {
-    slug: "style-impersonation",
+    slug: "style-impersonation"
+    category: "Consent",,
     title: "Why style impersonation is rejected",
     claim:
       "A project should not use AI or process language to launder a recognizable living artist's style into a new work without consent.",
@@ -123,7 +132,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Rejected Patterns Registry", "Abuse Case Library", "Review Rubric", "Trust Layer"],
   },
   {
-    slug: "collaborator-credit",
+    slug: "collaborator-credit"
+    category: "Credit",,
     title: "Why collaborator credit must be specific",
     claim:
       "Human contributors should receive specific credit for specific work instead of vague association or blanket legitimacy.",
@@ -136,7 +146,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Collaborator Profile Packet", "Project Profile Model", "Review Rubric", "Review Response Log"],
   },
   {
-    slug: "review-response-traceability",
+    slug: "review-response-traceability"
+    category: "Governance",,
     title: "Why review responses must be traceable",
     claim:
       "Public review should leave a record of what feedback came in, what changed, what was rejected, and why.",
@@ -149,7 +160,8 @@ export const whyfiles: Whyfile[] = [
     related: ["Review Response Log", "Governance Layer", "Public Review", "Review Intake Guide"],
   },
   {
-    slug: "platform-capability-gating",
+    slug: "platform-capability-gating"
+    category: "Platform",,
     title: "Why platform capability is gated",
     claim:
       "New platform capabilities should be reviewed before they create visibility, access, ranking, messaging, payment, or hosting power.",
@@ -166,3 +178,43 @@ export const whyfiles: Whyfile[] = [
 export function getWhyfile(slug: string) {
   return whyfiles.find((whyfile) => whyfile.slug === slug);
 }
+
+
+export const whyfileCategories = [
+  {
+    title: "Disclosure",
+    description:
+      "Why process transparency matters when AI materially shapes creative work.",
+    items: whyfiles.filter((whyfile) => whyfile.category === "Disclosure"),
+  },
+  {
+    title: "Consent",
+    description:
+      "Why people, styles, names, and social proximity cannot be treated as available materials.",
+    items: whyfiles.filter((whyfile) => whyfile.category === "Consent"),
+  },
+  {
+    title: "Credit",
+    description:
+      "Why human contribution needs specific attribution instead of vague legitimacy signals.",
+    items: whyfiles.filter((whyfile) => whyfile.category === "Credit"),
+  },
+  {
+    title: "Governance",
+    description:
+      "Why review, dissent, decisions, and response logs need public traceability.",
+    items: whyfiles.filter((whyfile) => whyfile.category === "Governance"),
+  },
+  {
+    title: "Review",
+    description:
+      "Why criticism, readiness, and rubric language must avoid approval theater.",
+    items: whyfiles.filter((whyfile) => whyfile.category === "Review"),
+  },
+  {
+    title: "Platform",
+    description:
+      "Why capability, marketplace behavior, automation, and hosted systems remain gated.",
+    items: whyfiles.filter((whyfile) => whyfile.category === "Platform"),
+  },
+] as const;
