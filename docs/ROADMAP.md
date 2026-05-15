@@ -84,3 +84,9 @@ This keeps review visible without creating artificial authority.
 Adds a public system map connecting all major layers into one readable overview.
 
 This makes the standard easier to understand as an operating system rather than a collection of disconnected pages.
+
+## v1.0.0 Public Standard Freeze
+
+Freezes the public static standard as the baseline future platform behavior must justify itself against.
+
+This marks the standard as ready for public review before any accounts, submissions, messaging, payments, public profiles, marketplace behavior, verification, certification, endorsement, or AI asset hosting are considered.

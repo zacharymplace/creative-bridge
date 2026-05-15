@@ -29,6 +29,8 @@ const markdownFiles = [
   "releases/v0.7.0.md",
   "releases/v0.8.0.md",
   "releases/v0.9.0.md",
+  "releases/v1.0.0.md",
+  "public-standard-freeze.md",
   "system-map.md",
   "review-rubric.md",
   "rejected-patterns.md",

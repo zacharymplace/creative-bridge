@@ -1,0 +1,43 @@
+export const publicStandardFreeze = {
+  title: "Public Standard Freeze",
+  version: "1.0.0",
+  summary:
+    "A stable public reference point for The Creative Bridge standard before any future platform behavior, submissions, accounts, messaging, payments, or marketplace features are considered.",
+  position:
+    "v1.0.0 freezes the public standard as a static trust and governance system. Future changes may still happen, but this release defines the baseline that future capability must be measured against.",
+  frozenLayers: [
+    { title: "Standard", href: "/standard" },
+    { title: "Manifesto", href: "/manifesto" },
+    { title: "Trust Layer", href: "/trust" },
+    { title: "Governance Layer", href: "/governance" },
+    { title: "Rejected Patterns Registry", href: "/rejected-patterns" },
+    { title: "Review Rubric", href: "/review-rubric" },
+    { title: "System Map", href: "/system-map" },
+    { title: "Creator Submission Packet", href: "/submit" },
+    { title: "Collaborator Profile Packet", href: "/collaborate" },
+    { title: "Example Project Profile", href: "/projects/neighborhood-chorus" },
+  ],
+  frozenCommitments: [
+    "AI-assisted creation should help more people reach human collaboration, not replace artists.",
+    "AI-assisted work should be disclosed when it materially shapes a project.",
+    "Human contributors should receive specific credit for specific work.",
+    "No collaborator should be publicly tagged, implied as attached, or used as a dream-team signal without consent.",
+    "Readiness and rubric language must not become certification, verification, endorsement, or approval theater.",
+    "Future platform capabilities require explicit governance review before implementation.",
+    "Rejected patterns remain active constraints, not historical notes.",
+  ],
+  futureReviewTriggers: [
+    "accounts",
+    "submissions",
+    "public profiles",
+    "messaging",
+    "payments",
+    "marketplace behavior",
+    "public collaborator discovery",
+    "ranking or scoring algorithms",
+    "certification",
+    "verification",
+    "endorsement",
+    "AI asset hosting",
+  ],
+} as const;

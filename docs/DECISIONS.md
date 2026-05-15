@@ -100,3 +100,9 @@ The project should become easier to inspect without claiming institutional autho
 ## System map before platform expansion
 
 The System Map was added before platform features so the public can understand the full trust and governance structure before capability expands.
+
+## Public standard freeze before platform exploration
+
+v1.0.0 freezes the static public standard before platform behavior.
+
+Future platform features must be reviewed against the frozen commitments, rejected patterns, trust layer, governance layer, and review rubric.
