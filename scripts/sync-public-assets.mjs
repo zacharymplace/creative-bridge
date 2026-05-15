@@ -39,6 +39,8 @@ const markdownFiles = [
   "releases/v1.6.0.md",
   "releases/v1.7.0.md",
   "releases/v1.8.0.md",
+  "releases/v1.9.0.md",
+  "review/review-response-log.md",
   "review/outreach-kit.md",
   "review/reviewer-brief-pack.md",
   "review/review-intake-guide.md",
