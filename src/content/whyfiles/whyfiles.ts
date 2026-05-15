@@ -96,6 +96,71 @@ export const whyfiles: Whyfile[] = [
       "Review materials should guide reviewers toward risk, misuse, drift, and governance critique.",
     related: ["Public Review", "Review Intake Guide", "Reviewer Brief Pack", "Review Response Log"],
   },
+  {
+    slug: "public-tagging",
+    title: "Why public collaborator tagging is rejected",
+    claim:
+      "People should not be publicly tagged, named, implied, or used as social proof for a project unless they explicitly consent.",
+    whyItMatters:
+      "Public tagging can create pressure, confusion, reputational risk, and implied endorsement before any real collaboration exists.",
+    whatCouldGoWrong:
+      "A creator could tag artists, editors, studios, or producers to gain attention, imply legitimacy, or pressure a response.",
+    boundaryCreated:
+      "Collaborator interest, dream-team references, and outreach should remain private or explicitly opt-in.",
+    related: ["Rejected Patterns Registry", "Abuse Case Library", "Collaborator Profile Packet", "Review Intake Guide"],
+  },
+  {
+    slug: "style-impersonation",
+    title: "Why style impersonation is rejected",
+    claim:
+      "A project should not use AI or process language to launder a recognizable living artist's style into a new work without consent.",
+    whyItMatters:
+      "Style impersonation can extract creative identity while avoiding direct copying language.",
+    whatCouldGoWrong:
+      "A project could avoid naming an artist directly while still marketing itself around their recognizable visual language.",
+    boundaryCreated:
+      "Indirect style imitation should be treated as a live risk, not a loophole.",
+    related: ["Rejected Patterns Registry", "Abuse Case Library", "Review Rubric", "Trust Layer"],
+  },
+  {
+    slug: "collaborator-credit",
+    title: "Why collaborator credit must be specific",
+    claim:
+      "Human contributors should receive specific credit for specific work instead of vague association or blanket legitimacy.",
+    whyItMatters:
+      "Specific credit helps prevent minor participation from being inflated into broad endorsement or full creative authorship.",
+    whatCouldGoWrong:
+      "A project could use one consultation, sketch, edit, or note to imply broader human involvement than actually occurred.",
+    boundaryCreated:
+      "Credit should describe role, contribution type, scope, and boundaries wherever possible.",
+    related: ["Collaborator Profile Packet", "Project Profile Model", "Review Rubric", "Review Response Log"],
+  },
+  {
+    slug: "review-response-traceability",
+    title: "Why review responses must be traceable",
+    claim:
+      "Public review should leave a record of what feedback came in, what changed, what was rejected, and why.",
+    whyItMatters:
+      "Traceability prevents review from becoming theater and makes governance accountable to actual criticism.",
+    whatCouldGoWrong:
+      "A project could claim it was reviewed while ignoring hard feedback, accepting only easy praise, or hiding rejected concerns.",
+    boundaryCreated:
+      "Review feedback should be logged with response state, rationale, and release relationship.",
+    related: ["Review Response Log", "Governance Layer", "Public Review", "Review Intake Guide"],
+  },
+  {
+    slug: "platform-capability-gating",
+    title: "Why platform capability is gated",
+    claim:
+      "New platform capabilities should be reviewed before they create visibility, access, ranking, messaging, payment, or hosting power.",
+    whyItMatters:
+      "Capability changes incentives. Once a system can amplify, rank, host, monetize, or connect people, it can also distort behavior.",
+    whatCouldGoWrong:
+      "A static standard could gradually become an opaque platform that rewards speed, volume, status, or monetization over consent and craft.",
+    boundaryCreated:
+      "Accounts, submissions, messaging, payments, ranking, public profiles, marketplace behavior, and AI asset hosting require explicit governance review.",
+    related: ["Governance Layer", "Incentive Drift Map", "Governance Stress Tests", "Public Review Operating System Freeze"],
+  },
 ];
 
 export function getWhyfile(slug: string) {
