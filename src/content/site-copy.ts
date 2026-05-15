@@ -147,7 +147,7 @@ export const footerCopy = {
   tagline: "Human collaboration over machine substitution.",
   colophon: "© The Creative Bridge contributors. Content and schemas are versioned in-repo.",
   navLinks: [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/start" },
     { label: "Docs", href: "/docs" },
     { label: "Projects", href: "/projects" },
   { label: "Submit", href: "/submit" },
@@ -188,7 +188,8 @@ export const footerCopy = {
   { label: "Review OS", href: "/review-os" },
   { label: "Whyfiles", href: "/whyfiles" },
   { label: "Limits", href: "/limits" },
-    { label: "Standard", href: "/standard" },
+    { label: "Start", href: "/start" },
+  { label: "Standard", href: "/standard" },
     { label: "Manifesto", href: "/manifesto" },
   ] as const,
   githubPlaceholder: {
