@@ -47,6 +47,8 @@ const markdownFiles = [
   "releases/v2.4.0.md",
   "releases/v2.5.0.md",
   "releases/v2.6.0.md",
+  "releases/v2.7.0.md",
+  "review/public-review-launch-copy.md",
   "start-here.md",
   "limits-and-non-authority.md",
   "whyfiles/platform-capability-gating.md",
