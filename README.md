@@ -1,6 +1,7 @@
 # The Creative Bridge
 
 Live site: https://creative-bridge-wheat.vercel.app
+Review entry: https://creative-bridge-wheat.vercel.app/review
 
 **The Creative Bridge** is a small, versioned public standard for creative work in the age of machine assistance. It names how humans stay accountable, how credit and consent stay legible, and how AI is bounded so it **helps people reach collaboration**—not replace artists.
 
