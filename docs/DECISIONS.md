@@ -90,3 +90,9 @@ This ensures future features that introduce accounts, submissions, public profil
 The Rejected Patterns Registry makes the project’s refusal points public.
 
 This helps prevent future drift toward style impersonation, hidden AI use, public collaborator tagging, implied attachment, fake certification, vague credit, pressure-based recruitment, AI asset dumping, or marketplace behavior disguised as preparation.
+
+## Rubric without authority claims
+
+The Review Rubric Layer exists to improve accountability and clarity without creating certification, endorsement, verification, ranking systems, or hidden moderation.
+
+The project should become easier to inspect without claiming institutional authority.

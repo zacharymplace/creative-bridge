@@ -72,3 +72,9 @@ This keeps accounts, submissions, messaging, payments, public profiles, marketpl
 Adds a public registry of behaviors the standard explicitly rejects.
 
 This makes project boundaries easier to audit before any future platform features are considered.
+
+## v0.8.0 Review Rubric Layer
+
+Adds a public rubric for evaluating project profiles against transparency, consent boundaries, role clarity, credit specificity, AI-use disclosure, human-finished pathways, and rejected-pattern risk.
+
+This keeps review visible without creating artificial authority.
