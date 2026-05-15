@@ -54,6 +54,7 @@ const requiredFiles = [
   "docs/releases/v2.3.0.md",
   "docs/releases/v2.4.0.md",
   "docs/releases/v2.5.0.md",
+  "docs/releases/v2.6.0.md",
   "docs/start-here.md",
   "start.html",
   "docs/limits-and-non-authority.md",
