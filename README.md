@@ -130,3 +130,36 @@ npm run check:static
 ## Latest release note
 
 - [`docs/releases/v0.4.0.md`](./docs/releases/v0.4.0.md)
+
+## Deployment
+
+This repo deploys as a static export through GitHub Pages.
+
+The deploy workflow lives at:
+
+.github/workflows/deploy-pages.yml
+
+The workflow runs:
+
+npm run check:static
+
+Then uploads the out/ directory as the Pages artifact.
+
+To enable deployment:
+
+1. Open the repository on GitHub.
+2. Go to Settings → Pages.
+3. Set Source to GitHub Actions.
+4. Push to main or run the workflow manually.
+
+## Public review
+
+Public review materials live in:
+
+- docs/review/public-review-packet.md
+- docs/review/change-proposal-template.md
+
+GitHub issue templates are available for:
+
+- Standard review
+- Change proposal

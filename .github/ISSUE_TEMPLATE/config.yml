@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the Public Standard Freeze
+    url: /docs/public-standard-freeze.md
+    about: Review the v1 baseline before proposing changes.

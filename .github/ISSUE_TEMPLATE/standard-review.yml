@@ -1,0 +1,67 @@
+name: Standard review
+description: Review or challenge part of The Creative Bridge public standard.
+title: "[Review]: "
+labels: ["standard-review"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area reviewed
+      options:
+        - Standard
+        - Manifesto
+        - Trust Layer
+        - Governance Layer
+        - Rejected Patterns
+        - Review Rubric
+        - System Map
+        - Creator Submission Packet
+        - Collaborator Profile Packet
+        - Project Profile Model
+        - Static export / docs infrastructure
+    validations:
+      required: true
+
+  - type: textarea
+    id: works
+    attributes:
+      label: What works?
+      description: What is clear, useful, or worth preserving?
+    validations:
+      required: true
+
+  - type: textarea
+    id: unclear
+    attributes:
+      label: What is unclear?
+      description: Identify vague language, missing boundaries, or confusing structure.
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk or abuse case
+      description: How could this be misused, misunderstood, or weakened over time?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_change
+    attributes:
+      label: Suggested change
+      description: Propose a concrete wording, docs, schema, or structure change.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: alignment
+    attributes:
+      label: Alignment check
+      options:
+        - label: This preserves human direction.
+        - label: This preserves transparent process.
+        - label: This preserves clear credit.
+        - label: This preserves consent boundaries.
+        - label: This preserves collaboration-first design.
+        - label: This avoids certification, verification, endorsement, or marketplace drift.

@@ -1,0 +1,48 @@
+name: Change proposal
+description: Propose a specific change to the standard, docs, templates, schemas, or static site.
+title: "[Change]: "
+labels: ["change-proposal"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is unclear, risky, missing, or incorrect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should change?
+    validations:
+      required: true
+
+  - type: textarea
+    id: accepted_risk
+    attributes:
+      label: Risk if accepted
+      description: What could this weaken or complicate?
+    validations:
+      required: true
+
+  - type: textarea
+    id: rejected_risk
+    attributes:
+      label: Risk if rejected
+      description: What remains unresolved?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: platform_guardrails
+    attributes:
+      label: Platform guardrails
+      options:
+        - label: This does not introduce accounts.
+        - label: This does not introduce messaging.
+        - label: This does not introduce payments.
+        - label: This does not introduce marketplace behavior.
+        - label: This does not introduce public collaborator tagging.
+        - label: This does not claim certification, verification, endorsement, or approval.
