@@ -39,6 +39,8 @@ const requiredFiles = [
   "docs/releases/v0.9.0.md",
   "docs/releases/v1.0.0.md",
   "docs/releases/v1.1.0.md",
+  "docs/releases/v1.2.0.md",
+  "review.html",
   "docs/review/change-proposal-template.md",
   "docs/review/public-review-packet.md",
   "docs/public-standard-freeze.md",
