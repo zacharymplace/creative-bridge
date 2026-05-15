@@ -60,3 +60,9 @@ This remains non-platform: no accounts, public profiles, messaging, marketplace 
 Adds a public trust layer so the project’s anti-replacement stance, disclosure model, consent boundaries, credit boundaries, accessibility framing, and non-platform discipline are visible in one place.
 
 This makes the project easier to inspect and criticize before any platform behavior exists.
+
+## v0.6.0 Governance Layer
+
+Adds static governance so future changes can be reviewed against versioning rules, change proposal expectations, rejected patterns, and escalation triggers.
+
+This keeps accounts, submissions, messaging, payments, public profiles, marketplace behavior, certification, verification, and AI asset hosting behind explicit review.

@@ -78,3 +78,9 @@ It exists to protect collaborators from being treated as interchangeable labor a
 The project now includes a Public Trust Layer before adding any accounts, submissions, messaging, marketplace behavior, or public profiles.
 
 This is intentional: the standard should become easier to inspect and govern before the product becomes more capable.
+
+## Governance before capability expansion
+
+The Governance Layer was added before any platform capability.
+
+This ensures future features that introduce accounts, submissions, public profiles, messaging, payments, marketplace behavior, public discovery, scoring, certification, verification, endorsement, or AI asset hosting require explicit review before implementation.

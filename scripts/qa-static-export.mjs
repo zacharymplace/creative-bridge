@@ -33,6 +33,9 @@ const requiredFiles = [
   "docs/collaborator-profile-packet.md",
   "docs/releases/v0.4.0.md",
   "docs/releases/v0.5.0.md",
+  "docs/releases/v0.6.0.md",
+  "docs/governance-layer.md",
+  "governance.html",
   "docs/trust-layer.md",
   "trust.html",
 ];
