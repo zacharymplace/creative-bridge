@@ -79,6 +79,8 @@ const markdownFiles = [
   "releases/v3.26.0.md",
   "releases/v3.27.0.md",
   "releases/v3.28.0.md",
+  "releases/v3.29.0.md",
+  "system/review-rubric-reader-pass.md",
   "system/stress-tests-reader-pass.md",
   "system/rejected-patterns-reader-pass.md",
   "system/incentive-drift-reader-pass.md",
