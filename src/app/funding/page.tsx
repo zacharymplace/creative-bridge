@@ -1,124 +1,136 @@
-import { fundingPrinciples } from "@/content/funding/funding-principles";
+import Link from "next/link";
 
 export default function FundingPage() {
+  const fundingFor = [
+    "Maintaining the public standard and documentation.",
+    "Supporting review infrastructure, response logs, and governance records.",
+    "Keeping the project accessible, static-first, and low-friction.",
+    "Funding careful refinement without turning the standard into a pay-to-play system.",
+  ];
+
+  const cannotBuy = [
+    "Certification, approval, endorsement, verification, or trusted status.",
+    "Review priority, response priority, influence over governance, or placement advantages.",
+    "Public recognition that implies legitimacy or elevated standing.",
+    "Changes to standards, limits, review outcomes, or rationale records.",
+    "Access to hidden authority, private scoring, rankings, or marketplace benefits.",
+  ];
+
+  const supportModels = [
+    "Optional donations with no influence rights.",
+    "Supporter subscriptions with no governance privilege.",
+    "Institutional sponsorship only under non-interference terms.",
+    "Paid workshops or toolkits only if they do not create certification claims.",
+    "Future payment mechanics only after the donation implementation gate passes.",
+  ];
+
+  const unsafeInterpretations = [
+    "Supporter means approved.",
+    "Sponsor means endorsed.",
+    "Donor means prioritized.",
+    "Paid user means certified.",
+    "Funding means the standard is commercially neutralized.",
+  ];
+
+  const nextSteps = [
+    { label: "Sustainability", href: "/sustainability" },
+    { label: "Donation Readiness", href: "/donation-readiness" },
+    { label: "Sponsor Terms", href: "/sponsor-terms" },
+    { label: "Recognition Boundaries", href: "/recognition-boundaries" },
+    { label: "Donation Gate", href: "/donation-gate" },
+    { label: "Launch Review", href: "/donation-launch-review" },
+  ];
+
   return (
     <main>
       <section className="cb-container cb-section-y">
         <p className="font-mono text-[13px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-          Version {fundingPrinciples.version}
+          Sustainability layer
         </p>
 
         <h1 className="cb-display mt-4 max-w-4xl text-4xl tracking-tight text-[var(--cb-ink)] sm:text-5xl sm:leading-tight">
-          {fundingPrinciples.title}
+          Funding
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[var(--cb-body)]">
-          {fundingPrinciples.summary}
+          Funding can support maintenance, review infrastructure, and long-term
+          sustainability. It cannot buy legitimacy, priority, approval,
+          certification, endorsement, or influence.
         </p>
 
-        <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-          <h2 className="text-base font-medium text-[var(--cb-ink)]">
-            Position
+        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <h2 className="text-lg font-medium text-[var(--cb-ink)]">
+            Current status
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">
-            {fundingPrinciples.position}
+          <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+            Donation and supporter mechanics are not live unless the donation
+            implementation gate is satisfied. Funding language is staged before
+            payment mechanics so support cannot be mistaken for governance
+            influence or public approval.
           </p>
-        </div>
-
-        <section className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Non-negotiables
-          </h2>
-          <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
-            {fundingPrinciples.nonNegotiables.map((item) => (
-              <li key={item}>— {item}</li>
-            ))}
-          </ul>
         </section>
 
-        <section className="mt-12">
-          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Funding phases
-          </h2>
+        <section className="mt-12 grid gap-8 lg:grid-cols-2">
+          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+            <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+              What funding is for
+            </h2>
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {fundingFor.map((item) => (
+                <li key={item}>— {item}</li>
+              ))}
+            </ul>
+          </div>
 
-          <div className="mt-6 grid gap-5">
-            {fundingPrinciples.phases.map((phase) => (
-              <article
-                key={phase.title}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
-              >
-                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-                  {phase.timing}
-                </p>
-                <h3 className="mt-3 text-lg font-medium text-[var(--cb-ink)]">
-                  {phase.title}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-                  {phase.model}
-                </p>
-
-                <div className="mt-5 grid gap-5 md:grid-cols-2">
-                  <div>
-                    <h4 className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-                      Allowed
-                    </h4>
-                    <p className="mt-3 text-sm leading-7 text-[var(--cb-body)]">
-                      {phase.allowed}
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-                      Not allowed
-                    </h4>
-                    <p className="mt-3 text-sm leading-7 text-[var(--cb-body)]">
-                      {phase.notAllowed}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            ))}
+          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+            <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+              What funding cannot buy
+            </h2>
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {cannotBuy.map((item) => (
+                <li key={item}>— {item}</li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        <section className="mt-12">
-          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Pricing ladders
-          </h2>
+        <section className="mt-12 grid gap-8 lg:grid-cols-2">
+          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+            <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+              Allowed support models
+            </h2>
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {supportModels.map((item) => (
+                <li key={item}>— {item}</li>
+              ))}
+            </ul>
+          </div>
 
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
-            {fundingPrinciples.pricingLadders.map((tier) => (
-              <article
-                key={tier.name}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6"
-              >
-                <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-                  {tier.name}
-                </h3>
-                <p className="mt-3 font-mono text-[12px] uppercase tracking-[0.14em] text-[var(--cb-muted)]">
-                  {tier.price}
-                </p>
-                <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-                  {tier.purpose}
-                </p>
-              </article>
-            ))}
+          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+            <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+              Unsafe interpretations
+            </h2>
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {unsafeInterpretations.map((item) => (
+                <li key={item}>— {item}</li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        <section className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Drift risks
+        <section className="mt-12 border-t border-[var(--cb-border)] pt-8">
+          <h2 className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
+            Go next
           </h2>
-          <div className="mt-6 grid gap-5">
-            {fundingPrinciples.driftRisks.map((item) => (
-              <div key={item.risk}>
-                <h3 className="text-base font-medium text-[var(--cb-ink)]">
-                  {item.risk}
-                </h3>
-                <p className="mt-2 text-sm leading-7 text-[var(--cb-body)]">
-                  {item.guardrail}
-                </p>
-              </div>
+          <div className="mt-5 flex flex-wrap gap-3">
+            {nextSteps.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              >
+                {item.label}
+              </Link>
             ))}
           </div>
         </section>
