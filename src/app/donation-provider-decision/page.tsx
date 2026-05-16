@@ -1,104 +1,143 @@
-import { donationProviderDecision } from "@/content/donation-provider-decision/donation-provider-decision";
+import Link from "next/link";
+
+const decisionDoesNotMean = [
+  "A provider decision does not mean donation links are live.",
+  "A provider decision does not mean support mechanics are publicly launched.",
+  "A provider decision does not override Donation Gate or Donation Readiness.",
+  "A provider decision does not grant supporters influence, priority, status, or governance power.",
+  "A provider decision does not make the selected provider permanent.",
+];
+
+const decisionFactors = [
+  {
+    title: "Boundary fit",
+    description:
+      "The provider must support language that separates donations from approval, certification, endorsement, review priority, or influence.",
+  },
+  {
+    title: "Operational simplicity",
+    description:
+      "The provider should keep the donation path understandable, low-maintenance, and easy to pause or remove.",
+  },
+  {
+    title: "Traceable records",
+    description:
+      "The provider should support clear records for transactions, fees, refunds, acknowledgments, and future review.",
+  },
+  {
+    title: "Public copy compatibility",
+    description:
+      "The provider flow should allow support language to remain conservative, clear, and resistant to overclaiming.",
+  },
+  {
+    title: "Reversal path",
+    description:
+      "The decision should preserve the ability to change providers if incentives, operations, fees, or trust risks shift.",
+  },
+];
+
+const requiredSafeguards = [
+  "Donation readiness must remain separate from provider selection.",
+  "Donation launch must pass the Donation Gate before public activation.",
+  "Recognition boundaries must be documented before supporter acknowledgments expand.",
+  "Sponsor and supporter language must not imply influence or status.",
+  "Provider decisions should remain revisitable through release notes and decision records.",
+];
+
+const escalationPaths = [
+  { label: "Payment Provider Evaluation", href: "/payment-provider-evaluation" },
+  { label: "Donation Readiness", href: "/donation-readiness" },
+  { label: "Donation Gate", href: "/donation-gate" },
+  { label: "Funding", href: "/funding" },
+  { label: "Recognition Boundaries", href: "/recognition-boundaries" },
+  { label: "Supporter Copy", href: "/supporter-copy" },
+];
 
 export default function DonationProviderDecisionPage() {
   return (
     <main>
       <section className="cb-container cb-section-y">
         <p className="font-mono text-[13px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-          Version {donationProviderDecision.version}
+          Provider decision and traceability
         </p>
 
         <h1 className="cb-display mt-4 max-w-4xl text-4xl tracking-tight text-[var(--cb-ink)] sm:text-5xl sm:leading-tight">
-          {donationProviderDecision.title}
+          Donation Provider Decision
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[var(--cb-body)]">
-          {donationProviderDecision.summary}
+          This page records how a donation provider decision should be
+          understood. Provider selection supports readiness work, but it does
+          not activate donation links or authorize public launch.
         </p>
 
-        <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-          <h2 className="text-base font-medium text-[var(--cb-ink)]">
-            Position
+        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <h2 className="text-lg font-medium text-[var(--cb-ink)]">
+            What this page is for
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">
-            {donationProviderDecision.position}
-          </p>
-        </div>
-
-        <section className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Decision
-          </h2>
-          <p className="mt-6 text-sm leading-7 text-[var(--cb-body)]">
-            {donationProviderDecision.decision}
+          <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+            Use this page to understand why a provider path was selected, what
+            risks still need control, and which gates must remain separate
+            before donation mechanics become public.
           </p>
         </section>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
           <article className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-              {donationProviderDecision.selectedProvider.status}
-            </p>
-            <h2 className="mt-3 text-2xl font-medium text-[var(--cb-ink)]">
-              {donationProviderDecision.selectedProvider.name}
+            <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+              Decision does not mean
             </h2>
-            <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-              {donationProviderDecision.selectedProvider.rationale}
-            </p>
-            <ul className="mt-6 space-y-3 text-sm leading-7 text-[var(--cb-body)]">
-              {donationProviderDecision.selectedProvider.conditions.map((item) => (
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {decisionDoesNotMean.map((item) => (
                 <li key={item}>— {item}</li>
               ))}
             </ul>
           </article>
 
           <article className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-              {donationProviderDecision.fallbackProvider.status}
-            </p>
-            <h2 className="mt-3 text-2xl font-medium text-[var(--cb-ink)]">
-              {donationProviderDecision.fallbackProvider.name}
+            <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+              Required safeguards
             </h2>
-            <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-              {donationProviderDecision.fallbackProvider.rationale}
-            </p>
-            <ul className="mt-6 space-y-3 text-sm leading-7 text-[var(--cb-body)]">
-              {donationProviderDecision.fallbackProvider.conditions.map((item) => (
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {requiredSafeguards.map((item) => (
                 <li key={item}>— {item}</li>
               ))}
             </ul>
           </article>
         </section>
 
-        <section className="mt-12">
-          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Deferred providers
-          </h2>
-
-          <div className="mt-6 grid gap-5">
-            {donationProviderDecision.deferredProviders.map((provider) => (
-              <article
-                key={provider.name}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6"
-              >
-                <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-                  {provider.name}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-                  {provider.reason}
-                </p>
-              </article>
-            ))}
-          </div>
+        <section className="mt-12 grid gap-6">
+          {decisionFactors.map((item) => (
+            <article
+              key={item.title}
+              className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+            >
+              <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+                {item.title}
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+                {item.description}
+              </p>
+            </article>
+          ))}
         </section>
 
         <section className="mt-12 border-t border-[var(--cb-border)] pt-8">
           <h2 className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
-            Integration boundary
+            Escalate to
           </h2>
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-[var(--cb-body)]">
-            {donationProviderDecision.integrationBoundary}
-          </p>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            {escalationPaths.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </section>
       </section>
     </main>
