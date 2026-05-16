@@ -5,6 +5,7 @@ import { HeroSection } from "./HeroSection";
 import { HowSection } from "./HowSection";
 import { ManifestoSection } from "./ManifestoSection";
 import { MobileNav } from "./MobileNav";
+import { NextFrontierSection } from "./NextFrontierSection";
 import { PositionSection } from "./PositionSection";
 import { ProblemSection } from "./ProblemSection";
 import { SiteFooter } from "./SiteFooter";
@@ -24,6 +25,7 @@ export function LandingPage() {
       </a>
       <HeroSection />
       <MobileNav />
+      <NextFrontierSection />
       <StartHereSection />
       <main>
         <PositionSection />
