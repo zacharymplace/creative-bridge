@@ -100,6 +100,8 @@ const requiredFiles = [
   "docs/releases/v3.39.0.md",
   "docs/releases/v3.40.0.md",
   "docs/releases/v3.41.0.md",
+  "docs/releases/v3.42.0.md",
+  "docs/system/projects-page-reader-pass.md",
   "docs/system/manifesto-reader-pass.md",
   "docs/system/v1-page-reader-pass.md",
   "docs/system/system-map-reader-pass.md",
