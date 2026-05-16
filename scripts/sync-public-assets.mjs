@@ -93,6 +93,8 @@ const markdownFiles = [
   "releases/v3.40.0.md",
   "releases/v3.41.0.md",
   "releases/v3.42.0.md",
+  "releases/v3.43.0.md",
+  "system/neighborhood-chorus-project-reader-pass.md",
   "system/projects-page-reader-pass.md",
   "system/manifesto-reader-pass.md",
   "system/v1-page-reader-pass.md",
