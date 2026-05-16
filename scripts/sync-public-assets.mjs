@@ -58,6 +58,8 @@ const markdownFiles = [
   "releases/v3.5.0.md",
   "releases/v3.6.0.md",
   "releases/v3.7.0.md",
+  "releases/v3.8.0.md",
+  "business/donation-link-staging-copy.md",
   "business/donation-implementation-gate.md",
   "business/donation-provider-decision-record.md",
   "business/payment-provider-evaluation.md",
