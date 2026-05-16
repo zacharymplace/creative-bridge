@@ -1,77 +1,156 @@
 import Link from "next/link";
 
-import { whyfileCategories, whyfilesMeta } from "@/content/whyfiles/whyfiles";
+import { whyfiles } from "@/content/whyfiles/whyfiles";
+
+const categories = [
+  {
+    title: "Disclosure",
+    body:
+      "Rules explaining transparency, attribution, AI disclosure, and public honesty.",
+  },
+  {
+    title: "Consent",
+    body:
+      "Rules protecting privacy, collaborator agency, tagging boundaries, and participation control.",
+  },
+  {
+    title: "Credit",
+    body:
+      "Rules around authorship, acknowledgment, contribution, and impersonation boundaries.",
+  },
+  {
+    title: "Governance",
+    body:
+      "Rules protecting the system from authority drift, marketplace capture, and legitimacy theater.",
+  },
+  {
+    title: "Review",
+    body:
+      "Rules ensuring criticism stays more important than approval or promotion.",
+  },
+  {
+    title: "Platform",
+    body:
+      "Rules governing rollout sequencing, capability gating, and implementation discipline.",
+  },
+];
 
 export default function WhyfilesPage() {
   return (
     <main>
       <section className="cb-container cb-section-y">
         <p className="font-mono text-[13px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-          Version {whyfilesMeta.version}
+          Rationale layer
         </p>
 
         <h1 className="cb-display mt-4 max-w-4xl text-4xl tracking-tight text-[var(--cb-ink)] sm:text-5xl sm:leading-tight">
-          {whyfilesMeta.title}
+          Whyfiles
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[var(--cb-body)]">
-          {whyfilesMeta.summary}
+          Whyfiles explain why decisions exist. They preserve reasoning so the
+          system does not depend on implied authority, hidden judgment, or
+          “trust us” governance.
         </p>
 
-        <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-          <h2 className="text-base font-medium text-[var(--cb-ink)]">
-            Position
+        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <h2 className="text-lg font-medium text-[var(--cb-ink)]">
+            Why this layer exists
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">
-            {whyfilesMeta.position}
+          <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+            The standard, review layer, governance rules, and funding boundaries
+            all create decisions that need explanation. Whyfiles preserve the
+            rationale behind those decisions so the project remains reviewable,
+            critiqueable, and resistant to authority drift.
           </p>
-        </div>
+        </section>
 
         <section className="mt-12">
           <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Rationale system
+            Rationale categories
           </h2>
 
-          <div className="mt-6 grid gap-8">
-            {whyfileCategories.map((category) => (
-              <section
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            {categories.map((category) => (
+              <article
                 key={category.title}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6"
               >
-                <div className="max-w-3xl">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-                    Category
-                  </p>
-                  <h3 className="mt-3 text-2xl font-medium text-[var(--cb-ink)]">
-                    {category.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-                    {category.description}
-                  </p>
+                <h3 className="text-xl font-medium text-[var(--cb-ink)]">
+                  {category.title}
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+                  {category.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+            Rationale records
+          </h2>
+
+          <div className="mt-6 grid gap-4">
+            {whyfiles.map((item) => (
+              <Link
+                key={item.slug}
+                href={`/whyfiles/${item.slug}`}
+                className="block border border-[var(--cb-border)] bg-[var(--cb-surface)] p-5 underline-offset-4 hover:underline"
+              >
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--cb-muted)]">
+                    {item.category}
+                  </span>
                 </div>
 
-                <div className="mt-6 grid gap-4">
-                  {category.items.map((whyfile) => (
-                    <article
-                      key={whyfile.slug}
-                      className="border border-[var(--cb-border)] bg-white p-5"
-                    >
-                      <h4 className="text-base font-medium text-[var(--cb-ink)]">
-                        <Link
-                          href={`/whyfiles/${whyfile.slug}`}
-                          className="underline-offset-4 hover:underline"
-                        >
-                          {whyfile.title}
-                        </Link>
-                      </h4>
-                      <p className="mt-3 text-sm leading-7 text-[var(--cb-body)]">
-                        {whyfile.claim}
-                      </p>
-                    </article>
-                  ))}
-                </div>
-              </section>
+                <h3 className="mt-3 text-lg font-medium text-[var(--cb-ink)]">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-[var(--cb-body)]">
+                  {item.claim}
+                </p>
+              </Link>
             ))}
+          </div>
+        </section>
+
+        <section className="mt-12 border-t border-[var(--cb-border)] pt-8">
+          <h2 className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
+            Go next
+          </h2>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              href="/review"
+              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+            >
+              Review
+            </Link>
+
+            <Link
+              href="/governance"
+              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+            >
+              Governance
+            </Link>
+
+            <Link
+              href="/limits"
+              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+            >
+              Limits
+            </Link>
+
+            <Link
+              href="/system-coherence"
+              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+            >
+              System
+            </Link>
           </div>
         </section>
       </section>

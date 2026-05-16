@@ -73,6 +73,8 @@ const markdownFiles = [
   "releases/v3.20.0.md",
   "releases/v3.21.0.md",
   "releases/v3.22.0.md",
+  "releases/v3.23.0.md",
+  "system/whyfiles-index-reader-pass.md",
   "system/system-coherence-reader-pass.md",
   "system/funding-page-reader-pass.md",
   "system/docs-index-reader-pass.md",
