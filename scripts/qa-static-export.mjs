@@ -69,6 +69,8 @@ const requiredFiles = [
   "docs/releases/v3.8.0.md",
   "docs/releases/v3.9.0.md",
   "docs/releases/v3.10.0.md",
+  "docs/releases/v3.11.0.md",
+  "docs/system/public-nav-compression.md",
   "docs/system/navigation-and-system-coherence.md",
   "system-coherence.html",
   "docs/business/donation-launch-readiness-review.md",
