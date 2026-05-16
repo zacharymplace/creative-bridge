@@ -68,6 +68,8 @@ const markdownFiles = [
   "releases/v3.15.0.md",
   "releases/v3.16.0.md",
   "releases/v3.17.0.md",
+  "releases/v3.18.0.md",
+  "system/limits-page-reader-pass.md",
   "system/standard-page-reader-pass.md",
   "system/homepage-hierarchy-compression.md",
   "system/homepage-hero-simplification.md",

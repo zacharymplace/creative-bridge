@@ -76,6 +76,8 @@ const requiredFiles = [
   "docs/releases/v3.15.0.md",
   "docs/releases/v3.16.0.md",
   "docs/releases/v3.17.0.md",
+  "docs/releases/v3.18.0.md",
+  "docs/system/limits-page-reader-pass.md",
   "docs/system/standard-page-reader-pass.md",
   "docs/system/homepage-hierarchy-compression.md",
   "docs/system/homepage-hero-simplification.md",
