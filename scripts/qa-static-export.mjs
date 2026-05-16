@@ -72,6 +72,8 @@ const requiredFiles = [
   "docs/releases/v3.11.0.md",
   "docs/releases/v3.12.0.md",
   "docs/releases/v3.13.0.md",
+  "docs/releases/v3.14.0.md",
+  "docs/system/start-page-rebuild.md",
   "docs/system/homepage-section-pruning.md",
   "docs/system/narrative-hierarchy.md",
   "docs/system/public-nav-compression.md",

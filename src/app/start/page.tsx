@@ -20,51 +20,74 @@ export default function StartPage() {
 
         <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">
-            Position
+            Thesis
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">
-            {startHere.position}
+            {startHere.thesis}
           </p>
         </div>
 
         <section className="mt-12">
           <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Choose a path
+            Choose your path
           </h2>
 
           <div className="mt-6 grid gap-5">
             {startHere.paths.map((path) => (
               <article
-                key={path.href}
+                key={path.title}
                 className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
               >
-                <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-                  <Link
-                    href={path.href}
-                    className="underline-offset-4 hover:underline"
-                  >
-                    {path.title}
-                  </Link>
+                <h3 className="text-xl font-medium text-[var(--cb-ink)]">
+                  {path.title}
                 </h3>
-
-                <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+                <p className="mt-4 max-w-3xl text-sm leading-7 text-[var(--cb-body)]">
                   {path.body}
                 </p>
 
-                <div className="mt-5 flex flex-wrap gap-3">
-                  {path.next.map((href) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      className="rounded-full border border-[var(--cb-border)] bg-white px-3 py-1 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
-                    >
-                      {href}
-                    </Link>
-                  ))}
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Link
+                    href={path.href}
+                    className="rounded-full bg-[var(--cb-ink)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-white underline-offset-4 hover:underline"
+                  >
+                    Start
+                  </Link>
+                  <Link
+                    href={path.nextHref}
+                    className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                  >
+                    {path.next}
+                  </Link>
                 </div>
               </article>
             ))}
           </div>
+        </section>
+
+        <section className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+            First read
+          </h2>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {startHere.firstRead.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12 border-t border-[var(--cb-border)] pt-8">
+          <h2 className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
+            Not required
+          </h2>
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-[var(--cb-body)]">
+            {startHere.notRequired}
+          </p>
         </section>
       </section>
     </main>
