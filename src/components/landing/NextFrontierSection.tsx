@@ -5,7 +5,7 @@ import { narrativeHierarchy } from "@/content/next-frontier/narrative-hierarchy"
 export function NextFrontierSection() {
   return (
     <section className="border-y border-[var(--cb-border)] bg-[var(--cb-surface)]">
-      <div className="cb-container py-16 sm:py-20">
+      <div className="cb-container py-14 sm:py-16">
         <p className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
           Start here
         </p>
@@ -14,31 +14,13 @@ export function NextFrontierSection() {
           {narrativeHierarchy.thesis}
         </h2>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          <div className="border border-[var(--cb-border)] bg-white p-6">
-            <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-              What this is
-            </h3>
-            <ul className="mt-5 space-y-3 text-sm leading-7 text-[var(--cb-body)]">
-              {narrativeHierarchy.whatThisIs.map((item) => (
-                <li key={item}>— {item}</li>
-              ))}
-            </ul>
-          </div>
+        <p className="mt-5 max-w-3xl text-sm leading-7 text-[var(--cb-body)]">
+          A reviewable standard, not a certification program. A collaboration
+          bridge, not a replacement engine. A governance-first archive of
+          decisions, limits, risks, and rationale.
+        </p>
 
-          <div className="border border-[var(--cb-border)] bg-white p-6">
-            <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-              What this is not
-            </h3>
-            <ul className="mt-5 space-y-3 text-sm leading-7 text-[var(--cb-body)]">
-              {narrativeHierarchy.whatThisIsNot.map((item) => (
-                <li key={item}>— {item}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
           {narrativeHierarchy.entryPaths.map((path) => (
             <Link
               key={path.href}
@@ -58,7 +40,7 @@ export function NextFrontierSection() {
           ))}
         </div>
 
-        <div className="mt-10 border-t border-[var(--cb-border)] pt-8">
+        <div className="mt-8 border-t border-[var(--cb-border)] pt-6">
           <h3 className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
             System lanes
           </h3>

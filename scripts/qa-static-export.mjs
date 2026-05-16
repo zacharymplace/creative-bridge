@@ -74,6 +74,8 @@ const requiredFiles = [
   "docs/releases/v3.13.0.md",
   "docs/releases/v3.14.0.md",
   "docs/releases/v3.15.0.md",
+  "docs/releases/v3.16.0.md",
+  "docs/system/homepage-hierarchy-compression.md",
   "docs/system/homepage-hero-simplification.md",
   "docs/system/start-page-rebuild.md",
   "docs/system/homepage-section-pruning.md",
