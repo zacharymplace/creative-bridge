@@ -1,103 +1,145 @@
-import { supporterCopyGuardrails } from "@/content/supporter-copy/supporter-copy";
+import Link from "next/link";
+
+const safeLanguage = [
+  "Support helps sustain ongoing work.",
+  "Support contributes to operational continuity.",
+  "Support does not grant authority, influence, approval, or governance power.",
+  "Supporters are acknowledged within defined recognition boundaries.",
+  "Support does not certify projects, people, or outcomes.",
+];
+
+const unsafeLanguage = [
+  "Trusted supporter",
+  "Certified supporter",
+  "Official supporter",
+  "Verified project supporter",
+  "Priority supporter access",
+  "Sponsor-backed approval",
+  "Governance participant",
+  "Community-vetted supporter",
+];
+
+const recognitionBoundaries = [
+  {
+    title: "Acknowledgment is not endorsement",
+    description:
+      "Public thanks or supporter acknowledgment should never imply approval, certification, trust status, or governance authority.",
+  },
+  {
+    title: "Support is not influence",
+    description:
+      "Financial support must not alter review posture, governance handling, escalation outcomes, or project visibility.",
+  },
+  {
+    title: "Support is not ranking",
+    description:
+      "Supporters should not receive scores, tiers, trust indicators, badges, or public authority framing.",
+  },
+  {
+    title: "Support is not access control",
+    description:
+      "Support should not become a gatekeeping layer for participation, criticism, review, or governance access.",
+  },
+];
+
+const escalationPaths = [
+  { label: "Recognition Boundaries", href: "/recognition-boundaries" },
+  { label: "Funding", href: "/funding" },
+  { label: "Donation Gate", href: "/donation-gate" },
+  { label: "Donation Launch Review", href: "/donation-launch-review" },
+  { label: "Governance", href: "/governance" },
+  { label: "Trust", href: "/trust" },
+];
 
 export default function SupporterCopyPage() {
   return (
     <main>
       <section className="cb-container cb-section-y">
         <p className="font-mono text-[13px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
-          Version {supporterCopyGuardrails.version}
+          Support language and recognition boundaries
         </p>
 
         <h1 className="cb-display mt-4 max-w-4xl text-4xl tracking-tight text-[var(--cb-ink)] sm:text-5xl sm:leading-tight">
-          {supporterCopyGuardrails.title}
+          Supporter Copy
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[var(--cb-body)]">
-          {supporterCopyGuardrails.summary}
+          Supporter copy explains what support does without implying authority,
+          endorsement, certification, trust status, influence, or governance
+          power.
         </p>
 
-        <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
-          <h2 className="text-base font-medium text-[var(--cb-ink)]">
-            Position
+        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <h2 className="text-lg font-medium text-[var(--cb-ink)]">
+            What supporter copy is for
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">
-            {supporterCopyGuardrails.position}
+
+          <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+            Use supporter copy to explain support mechanics clearly while
+            preserving governance integrity, review independence, and
+            recognition boundaries.
           </p>
-        </div>
+        </section>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div>
+          <article className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Safe language
             </h2>
-            <div className="mt-6 grid gap-5">
-              {supporterCopyGuardrails.safeLanguage.map((item) => (
-                <article
-                  key={item.title}
-                  className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6"
-                >
-                  <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-                    {item.copy}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
 
-          <div>
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {safeLanguage.map((item) => (
+                <li key={item}>— {item}</li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Unsafe language
             </h2>
-            <div className="mt-6 grid gap-5">
-              {supporterCopyGuardrails.unsafeLanguage.map((item) => (
-                <article
-                  key={item.title}
-                  className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6"
-                >
-                  <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-                    {item.copy}
-                  </p>
-                </article>
+
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-[var(--cb-body)]">
+              {unsafeLanguage.map((item) => (
+                <li key={item}>— {item}</li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </article>
         </section>
 
-        <section className="mt-12">
-          <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
-            Draft copy blocks
-          </h2>
+        <section className="mt-12 grid gap-6">
+          {recognitionBoundaries.map((item) => (
+            <article
+              key={item.title}
+              className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+            >
+              <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
+                {item.title}
+              </h2>
 
-          <div className="mt-6 grid gap-5">
-            {supporterCopyGuardrails.draftBlocks.map((block) => (
-              <article
-                key={block.label}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
-              >
-                <h3 className="text-lg font-medium text-[var(--cb-ink)]">
-                  {block.label}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
-                  {block.body}
-                </p>
-              </article>
-            ))}
-          </div>
+              <p className="mt-4 text-sm leading-7 text-[var(--cb-body)]">
+                {item.description}
+              </p>
+            </article>
+          ))}
         </section>
 
         <section className="mt-12 border-t border-[var(--cb-border)] pt-8">
           <h2 className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
-            Release gate
+            Escalate to
           </h2>
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-[var(--cb-body)]">
-            {supporterCopyGuardrails.releaseGate}
-          </p>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            {escalationPaths.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </section>
       </section>
     </main>

@@ -108,6 +108,8 @@ const requiredFiles = [
   "docs/releases/v3.47.0.md",
   "docs/releases/v3.48.0.md",
   "docs/releases/v3.49.0.md",
+  "docs/releases/v3.50.0.md",
+  "docs/system/supporter-copy-reader-pass.md",
   "docs/system/donation-staging-reader-pass.md",
   "docs/system/donation-launch-review-reader-pass.md",
   "docs/system/donation-gate-reader-pass.md",
