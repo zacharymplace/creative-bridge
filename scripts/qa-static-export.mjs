@@ -96,6 +96,8 @@ const requiredFiles = [
   "docs/releases/v3.35.0.md",
   "docs/releases/v3.36.0.md",
   "docs/releases/v3.37.0.md",
+  "docs/releases/v3.38.0.md",
+  "docs/system/trust-page-reader-pass.md",
   "docs/system/launch-copy-reader-pass.md",
   "docs/system/submit-page-reader-pass.md",
   "docs/system/collaborate-page-reader-pass.md",
