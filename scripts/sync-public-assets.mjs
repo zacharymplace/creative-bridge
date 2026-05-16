@@ -101,6 +101,8 @@ const markdownFiles = [
   "releases/v3.48.0.md",
   "releases/v3.49.0.md",
   "releases/v3.50.0.md",
+  "releases/v3.51.0.md",
+  "system/recognition-boundaries-reader-pass.md",
   "system/supporter-copy-reader-pass.md",
   "system/donation-staging-reader-pass.md",
   "system/donation-launch-review-reader-pass.md",
