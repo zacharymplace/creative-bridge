@@ -52,6 +52,8 @@ const markdownFiles = [
   "releases/v2.9.0.md",
   "releases/v3.0.0.md",
   "releases/v3.1.0.md",
+  "releases/v3.2.0.md",
+  "business/supporter-copy-guardrails.md",
   "business/donation-readiness.md",
   "business/sustainability-freeze.md",
   "business/funding-and-pricing-principles.md",
