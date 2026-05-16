@@ -90,6 +90,8 @@ const requiredFiles = [
   "docs/releases/v3.29.0.md",
   "docs/releases/v3.30.0.md",
   "docs/releases/v3.31.0.md",
+  "docs/releases/v3.32.0.md",
+  "docs/system/feedback-seeds-reader-pass.md",
   "docs/system/review-response-log-reader-pass.md",
   "docs/system/review-intake-reader-pass.md",
   "docs/system/review-rubric-reader-pass.md",
