@@ -1,8 +1,5 @@
 import { siteNav } from "@/content/site-copy";
-import { CollaboratorsSection } from "./CollaboratorsSection";
-import { CreatorsSection } from "./CreatorsSection";
 import { HeroSection } from "./HeroSection";
-import { HowSection } from "./HowSection";
 import { ManifestoSection } from "./ManifestoSection";
 import { MobileNav } from "./MobileNav";
 import { NextFrontierSection } from "./NextFrontierSection";
@@ -11,8 +8,6 @@ import { ProblemSection } from "./ProblemSection";
 import { SiteFooter } from "./SiteFooter";
 import { StartHereSection } from "./StartHereSection";
 import { StandardSection } from "./StandardSection";
-import { TiersSection } from "./TiersSection";
-import { TransparencySection } from "./TransparencySection";
 
 export function LandingPage() {
   return (
@@ -30,11 +25,6 @@ export function LandingPage() {
       <main>
         <PositionSection />
         <ProblemSection />
-        <HowSection />
-        <TiersSection />
-        <CreatorsSection />
-        <CollaboratorsSection />
-        <TransparencySection />
         <StandardSection />
         <ManifestoSection />
       </main>
