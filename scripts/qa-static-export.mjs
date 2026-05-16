@@ -105,6 +105,8 @@ const requiredFiles = [
   "docs/releases/v3.44.0.md",
   "docs/releases/v3.45.0.md",
   "docs/releases/v3.46.0.md",
+  "docs/releases/v3.47.0.md",
+  "docs/system/donation-gate-reader-pass.md",
   "docs/system/donation-readiness-reader-pass.md",
   "docs/system/donation-provider-decision-reader-pass.md",
   "docs/system/payment-provider-evaluation-reader-pass.md",
