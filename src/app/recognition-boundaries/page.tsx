@@ -82,7 +82,7 @@ export default function RecognitionBoundariesPage() {
         </section>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
-          <article className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <article className="min-w-0 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Recognition must not become
             </h2>
@@ -94,7 +94,7 @@ export default function RecognitionBoundariesPage() {
             </ul>
           </article>
 
-          <article className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <article className="min-w-0 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Unsafe recognition language
             </h2>
@@ -111,7 +111,7 @@ export default function RecognitionBoundariesPage() {
           {safePatterns.map((item) => (
             <article
               key={item.title}
-              className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+              className="min-w-0 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
             >
               <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
                 {item.title}
