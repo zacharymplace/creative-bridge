@@ -4,13 +4,13 @@ import { neighborhoodChorusScorecard } from "@/content/projects/neighborhood-cho
 
 export function BridgeReadinessSection() {
   return (
-    <section className="rounded-[2rem] border border-[var(--cb-border)] bg-white p-6 shadow-sm md:p-8">
+    <section className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] p-6 md:p-8">
       <div className="max-w-3xl">
         <p className="font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--cb-muted)]">
           Self-assessment
         </p>
 
-        <h2 className="mt-3 font-serif text-3xl text-[var(--cb-ink)]">
+        <h2 className="mt-3 font-[family-name:var(--font-condensed)] font-bold uppercase text-3xl text-[var(--cb-ink)]">
           {neighborhoodChorusScorecard.title}
         </h2>
 
@@ -23,14 +23,14 @@ export function BridgeReadinessSection() {
         {neighborhoodChorusScorecard.scores.map((score) => (
           <article
             key={score.category}
-            className="rounded-2xl border border-[var(--cb-border)] bg-[var(--cb-paper)] p-5"
+            className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-paper)] p-5"
           >
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <h3 className="font-serif text-xl text-[var(--cb-ink)]">
+              <h3 className="font-[family-name:var(--font-condensed)] font-bold uppercase text-xl text-[var(--cb-ink)]">
                 {score.category}
               </h3>
 
-              <span className="rounded-full border border-[var(--cb-border)] bg-white px-3 py-1 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)]">
+              <span className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-3 py-1 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)]">
                 {score.rating}
               </span>
             </div>

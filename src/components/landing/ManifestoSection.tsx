@@ -21,7 +21,7 @@ export function ManifestoSection() {
         <p className="mt-6">
           <Link
             href={manifestoCtaCopy.fullPageLink.href}
-            className="inline-flex border-b border-white/40 pb-0.5 text-sm font-medium text-[var(--cb-canvas)] transition-colors hover:border-white/70"
+            className="inline-flex border-b border-[var(--paper-3)] pb-0.5 text-sm font-medium text-[var(--cb-canvas)] transition-colors hover:border-[var(--paper)]"
           >
             {manifestoCtaCopy.fullPageLink.label}
           </Link>
@@ -29,7 +29,7 @@ export function ManifestoSection() {
         <p className="mt-12 max-w-2xl text-lg leading-relaxed text-[var(--cb-canvas-muted)]">
           {manifestoPreamble}
         </p>
-        <div className="mt-16 grid gap-12 border-t border-white/15 pt-16 lg:grid-cols-2">
+        <div className="mt-16 grid gap-12 border-t border-[var(--ink-muted)] pt-16 lg:grid-cols-2">
           {manifestoSections.map((s) => (
             <div key={s.id}>
               <h3 className="text-base font-medium text-[var(--cb-canvas)]">{s.title}</h3>
@@ -43,7 +43,7 @@ export function ManifestoSection() {
             </div>
           ))}
         </div>
-        <div className="mt-16 border-t border-white/15 pt-12">
+        <div className="mt-16 border-t border-[var(--ink-muted)] pt-12">
           <h3 className="text-base font-medium">{manifestoClosing.title}</h3>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--cb-canvas-muted)]">
             {manifestoClosing.body}
@@ -51,7 +51,7 @@ export function ManifestoSection() {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
             <Link
               href={manifestoCtaCopy.cta.href}
-              className="inline-flex h-12 items-center justify-center border border-white/40 bg-[var(--cb-canvas)] px-8 text-sm font-medium tracking-wide text-[var(--cb-ink)] transition-opacity hover:opacity-90"
+              className="inline-flex h-12 items-center justify-center border-[1.5px] border-[var(--paper-3)] bg-[var(--cb-canvas)] px-8 text-sm font-medium tracking-wide text-[var(--cb-ink)] transition-opacity hover:opacity-90"
             >
               {manifestoCtaCopy.cta.label}
             </Link>

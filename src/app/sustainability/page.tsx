@@ -16,7 +16,7 @@ export default function SustainabilityPage() {
           {sustainabilityFreeze.summary}
         </p>
 
-        <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <div className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">
             Position
           </h2>
@@ -34,7 +34,7 @@ export default function SustainabilityPage() {
             {sustainabilityFreeze.frozenLayers.map((layer) => (
               <article
                 key={layer.title}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+                className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
               >
                 <h3 className="text-lg font-medium text-[var(--cb-ink)]">
                   {layer.title}
@@ -48,7 +48,7 @@ export default function SustainabilityPage() {
         </section>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Payment boundary
             </h2>
@@ -59,7 +59,7 @@ export default function SustainabilityPage() {
             </ul>
           </div>
 
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Future requirements
             </h2>

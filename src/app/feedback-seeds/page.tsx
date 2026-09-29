@@ -72,7 +72,7 @@ export default function FeedbackSeedsPage() {
           rejected suggestions.
         </p>
 
-        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-lg font-medium text-[var(--cb-ink)]">
             What this page is for
           </h2>
@@ -87,7 +87,7 @@ export default function FeedbackSeedsPage() {
           {seedTypes.map((item) => (
             <article
               key={item.type}
-              className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+              className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
             >
               <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
                 {item.type}
@@ -116,7 +116,7 @@ export default function FeedbackSeedsPage() {
           ))}
         </section>
 
-        <section className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-12 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
             Handling rules
           </h2>
@@ -137,7 +137,7 @@ export default function FeedbackSeedsPage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
               >
                 {item.label}
               </Link>

@@ -18,7 +18,7 @@ export default function StartPage() {
           {startHere.summary}
         </p>
 
-        <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <div className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">
             Thesis
           </h2>
@@ -36,7 +36,7 @@ export default function StartPage() {
             {startHere.paths.map((path) => (
               <article
                 key={path.title}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+                className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
               >
                 <h3 className="text-xl font-medium text-[var(--cb-ink)]">
                   {path.title}
@@ -48,13 +48,13 @@ export default function StartPage() {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
                     href={path.href}
-                    className="rounded-full bg-[var(--cb-ink)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-white underline-offset-4 hover:underline"
+                    className=" bg-[var(--cb-ink)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--paper)] underline-offset-4 hover:underline"
                   >
                     Start
                   </Link>
                   <Link
                     href={path.nextHref}
-                    className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                    className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
                   >
                     {path.next}
                   </Link>
@@ -64,7 +64,7 @@ export default function StartPage() {
           </div>
         </section>
 
-        <section className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-12 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
             First read
           </h2>
@@ -73,7 +73,7 @@ export default function StartPage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
               >
                 {item.label}
               </Link>

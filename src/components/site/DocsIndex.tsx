@@ -51,7 +51,7 @@ export function DocsIndex() {
           ))}
         </ul>
 
-        <div className="mt-16 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <div className="mt-16 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">Also useful</h2>
           <ul className="mt-6 space-y-3">
             {extraLinks.map((item) => (

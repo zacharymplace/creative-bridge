@@ -25,7 +25,7 @@ export function NextFrontierSection() {
             <Link
               key={path.href}
               href={path.href}
-              className="block border border-[var(--cb-border)] bg-white p-5 underline-offset-4 hover:underline"
+              className="block border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] p-5 underline-offset-4 hover:underline"
             >
               <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--cb-muted)]">
                 Primary path
@@ -49,7 +49,7 @@ export function NextFrontierSection() {
               <Link
                 key={lane.href}
                 href={lane.href}
-                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
                 title={lane.body}
               >
                 {lane.title}

@@ -53,7 +53,7 @@ export default function WhyfilesPage() {
           “trust us” governance.
         </p>
 
-        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-lg font-medium text-[var(--cb-ink)]">
             Why this layer exists
           </h2>
@@ -74,7 +74,7 @@ export default function WhyfilesPage() {
             {categories.map((category) => (
               <article
                 key={category.title}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6"
+                className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6"
               >
                 <h3 className="text-xl font-medium text-[var(--cb-ink)]">
                   {category.title}
@@ -98,7 +98,7 @@ export default function WhyfilesPage() {
               <Link
                 key={item.slug}
                 href={`/whyfiles/${item.slug}`}
-                className="block border border-[var(--cb-border)] bg-[var(--cb-surface)] p-5 underline-offset-4 hover:underline"
+                className="block border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-5 underline-offset-4 hover:underline"
               >
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--cb-muted)]">
@@ -126,28 +126,28 @@ export default function WhyfilesPage() {
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
               href="/review"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               Review
             </Link>
 
             <Link
               href="/governance"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               Governance
             </Link>
 
             <Link
               href="/limits"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               Limits
             </Link>
 
             <Link
               href="/system-coherence"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               System
             </Link>

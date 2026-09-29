@@ -12,7 +12,7 @@ export function MobileNav() {
           <Link
             key={item.id}
             href={`#${item.id}`}
-            className="shrink-0 rounded-full border border-[var(--cb-border)] px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)]"
+            className="shrink-0 border-[1.5px] border-[var(--cb-border)] px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)]"
           >
             {item.label}
           </Link>

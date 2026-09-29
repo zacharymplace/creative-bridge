@@ -27,7 +27,7 @@ export function TransparencySection() {
           {transparencyCopy.title}
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--cb-body)]">{transparencyCopy.intro}</p>
-        <div className="mt-10 grid gap-8 border border-[var(--cb-border)] bg-[var(--cb-canvas)] p-6 sm:grid-cols-2 sm:p-8">
+        <div className="mt-10 grid gap-8 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-canvas)] p-6 sm:grid-cols-2 sm:p-8">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
               {transparencyCopy.standardVersionLabel}

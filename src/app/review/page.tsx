@@ -49,7 +49,7 @@ export default function ReviewPage() {
           protections, and places where the standard may fail under real use.
         </p>
 
-        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-lg font-medium text-[var(--cb-ink)]">
             What review is for
           </h2>
@@ -70,7 +70,7 @@ export default function ReviewPage() {
             {usefulCriticism.map((item) => (
               <article
                 key={item}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-5"
+                className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-5"
               >
                 <p className="text-sm leading-7 text-[var(--cb-body)]">
                   {item}
@@ -81,7 +81,7 @@ export default function ReviewPage() {
         </section>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Avoid sending
             </h2>
@@ -92,7 +92,7 @@ export default function ReviewPage() {
             </ul>
           </div>
 
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               How responses are handled
             </h2>
@@ -113,7 +113,7 @@ export default function ReviewPage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
               >
                 {item.label}
               </Link>

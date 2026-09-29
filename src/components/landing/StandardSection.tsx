@@ -15,7 +15,7 @@ export function StandardSection() {
         {ethicsCommitments.map((c) => (
           <div
             key={c.id}
-            className="border border-[var(--cb-border)] bg-[var(--cb-canvas)] p-6 sm:p-7"
+            className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-canvas)] p-6 sm:p-7"
           >
             <h3 className="text-base font-medium text-[var(--cb-ink)]">{c.title}</h3>
             <p className="mt-3 text-base leading-relaxed text-[var(--cb-body)]">{c.requirement}</p>

@@ -9,7 +9,7 @@ export function TiersSection() {
         {projectTiers.map((tier) => (
           <article
             key={tier.id}
-            className="flex flex-col border border-[var(--cb-border)] bg-[var(--cb-canvas)] p-6 sm:p-8"
+            className="flex flex-col border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-canvas)] p-6 sm:p-8"
           >
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">
               {tier.id}

@@ -18,7 +18,7 @@ export default function ReviewOsPage() {
           {reviewOsFreeze.summary}
         </p>
 
-        <div className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <div className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">
             Position
           </h2>
@@ -37,7 +37,7 @@ export default function ReviewOsPage() {
               <Link
                 key={layer.href}
                 href={layer.href}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-5 text-sm text-[var(--cb-body)] underline-offset-4 hover:underline"
+                className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-5 text-sm text-[var(--cb-body)] underline-offset-4 hover:underline"
               >
                 {layer.title}
               </Link>
@@ -45,7 +45,7 @@ export default function ReviewOsPage() {
           </div>
         </section>
 
-        <section className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-12 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
             Freeze principles
           </h2>

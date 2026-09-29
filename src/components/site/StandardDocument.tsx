@@ -20,7 +20,7 @@ export function StandardDocument() {
           <span>{ethicsStandardMeta.publicLabel}</span>
         </div>
         <p className="mt-10 max-w-2xl text-lg leading-relaxed text-[var(--cb-body)]">{ethicsStandardMeta.scope}</p>
-        <div className="mt-12 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <div className="mt-12 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">Definitions</h2>
           <dl className="mt-6 space-y-6 text-base leading-relaxed text-[var(--cb-body)]">
             <div>
@@ -39,7 +39,7 @@ export function StandardDocument() {
             {ethicsCommitments.map((c) => (
               <section
                 key={c.id}
-                className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+                className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
               >
                 <h3 className="text-lg font-medium text-[var(--cb-ink)]">{c.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{c.requirement}</p>
@@ -48,7 +48,7 @@ export function StandardDocument() {
             ))}
           </div>
         </div>
-        <section className="mt-14 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-14 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">Disclosure</h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--cb-body)]">{ethicsPublicDisclosure}</p>
         </section>

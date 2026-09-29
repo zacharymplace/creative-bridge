@@ -71,7 +71,7 @@ export default function DonationLaunchReviewPage() {
           permission.
         </p>
 
-        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-lg font-medium text-[var(--cb-ink)]">
             What this review is for
           </h2>
@@ -83,7 +83,7 @@ export default function DonationLaunchReviewPage() {
         </section>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
-          <article className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <article className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Launch review does not mean
             </h2>
@@ -94,7 +94,7 @@ export default function DonationLaunchReviewPage() {
             </ul>
           </article>
 
-          <article className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <article className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Launch blockers
             </h2>
@@ -110,7 +110,7 @@ export default function DonationLaunchReviewPage() {
           {reviewDimensions.map((item) => (
             <article
               key={item.title}
-              className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+              className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
             >
               <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
                 {item.title}
@@ -132,7 +132,7 @@ export default function DonationLaunchReviewPage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
               >
                 {item.label}
               </Link>

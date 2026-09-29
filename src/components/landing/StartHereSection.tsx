@@ -21,13 +21,13 @@ export function StartHereSection() {
           <div className="flex flex-wrap gap-3 lg:justify-end">
             <Link
               href="/start"
-              className="rounded-full border border-[var(--cb-ink)] bg-[var(--cb-ink)] px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-white"
+              className=" border-[1.5px] border-[var(--cb-ink)] bg-[var(--cb-ink)] px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--paper)]"
             >
               Start here
             </Link>
             <Link
               href="/review"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--cb-ink)]"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--cb-ink)]"
             >
               Review the standard
             </Link>

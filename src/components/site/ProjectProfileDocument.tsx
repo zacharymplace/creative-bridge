@@ -9,7 +9,7 @@ function tierLabel(id: ProjectProfile["currentTier"]) {
 
 function RoleList({ title, rows }: { title: string; rows: readonly RoleWithCollaboration[] }) {
   return (
-    <section className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+    <section className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
       <h2 className="text-base font-medium text-[var(--cb-ink)]">{title}</h2>
       <ul className="mt-6 space-y-5">
         {rows.map((r) => (
@@ -37,7 +37,7 @@ export function ProjectProfileDocument({ profile }: ProjectProfileDocumentProps)
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--cb-body)]">{profile.summary}</p>
 
-        <div className="mt-12 grid gap-6 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:grid-cols-2 sm:p-8">
+        <div className="mt-12 grid gap-6 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:grid-cols-2 sm:p-8">
           <div>
             <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--cb-muted)]">Current tier</h2>
             <p className="cb-display mt-3 text-lg text-[var(--cb-ink)]">{tierLabel(profile.currentTier)}</p>
@@ -49,15 +49,15 @@ export function ProjectProfileDocument({ profile }: ProjectProfileDocumentProps)
         </div>
 
         <section className="mt-10 space-y-6">
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="text-base font-medium text-[var(--cb-ink)]">Intent</h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.intent}</p>
           </div>
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="text-base font-medium text-[var(--cb-ink)]">Creator statement</h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.creatorStatement}</p>
           </div>
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="text-base font-medium text-[var(--cb-ink)]">AI-use disclosure</h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.aiUseDisclosure}</p>
           </div>
@@ -68,23 +68,23 @@ export function ProjectProfileDocument({ profile }: ProjectProfileDocumentProps)
           <RoleList title="Roles needed" rows={profile.rolesNeeded} />
         </div>
 
-        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">Dream team (private / opt-in)</h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.dreamTeamNote}</p>
         </section>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <section className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <section className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="text-base font-medium text-[var(--cb-ink)]">Human-finished pathway</h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.humanFinishedPathway}</p>
           </section>
-          <section className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <section className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="text-base font-medium text-[var(--cb-ink)]">Next milestone</h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.nextMilestone}</p>
           </section>
         </div>
 
-        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-base font-medium text-[var(--cb-ink)]">Boundary & ethics notes</h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--cb-body)]">{profile.boundaryEthicsNotes}</p>
         </section>

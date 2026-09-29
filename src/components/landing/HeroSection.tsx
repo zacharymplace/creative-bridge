@@ -20,19 +20,19 @@ export function HeroSection() {
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
             href="/start"
-            className="rounded-full bg-[var(--cb-ink)] px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-white underline-offset-4 hover:underline"
+            className=" bg-[var(--cb-ink)] px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--paper)] underline-offset-4 hover:underline"
           >
             Start here
           </Link>
           <Link
             href="/review"
-            className="rounded-full border border-[var(--cb-border)] bg-white px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--cb-ink)] underline-offset-4 hover:underline"
+            className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--cb-ink)] underline-offset-4 hover:underline"
           >
             Review
           </Link>
           <Link
             href="/standard"
-            className="rounded-full border border-[var(--cb-border)] bg-white px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--cb-ink)] underline-offset-4 hover:underline"
+            className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-5 py-2 font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--cb-ink)] underline-offset-4 hover:underline"
           >
             Standard
           </Link>

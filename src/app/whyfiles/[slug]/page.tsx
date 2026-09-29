@@ -34,7 +34,7 @@ export default async function WhyfilePage({
           ["What could go wrong without it", whyfile.whatCouldGoWrong],
           ["Boundary created", whyfile.boundaryCreated],
         ].map(([label, body]) => (
-          <section key={label} className="mt-8 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <section key={label} className="mt-8 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
               {label}
             </h2>
@@ -44,7 +44,7 @@ export default async function WhyfilePage({
           </section>
         ))}
 
-        <section className="mt-8 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-8 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--cb-muted)]">
             Related layers
           </h2>

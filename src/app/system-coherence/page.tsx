@@ -102,7 +102,7 @@ export default function SystemCoherencePage() {
           explicit non-interference rules.
         </p>
 
-        <section className="mt-10 border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+        <section className="mt-10 border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
           <h2 className="text-lg font-medium text-[var(--cb-ink)]">
             What this page does
           </h2>
@@ -117,7 +117,7 @@ export default function SystemCoherencePage() {
           {lanes.map((lane) => (
             <article
               key={lane.title}
-              className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
+              className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div>
@@ -131,7 +131,7 @@ export default function SystemCoherencePage() {
 
                 <Link
                   href={lane.href}
-                  className="w-fit rounded-full bg-[var(--cb-ink)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-white underline-offset-4 hover:underline"
+                  className="w-fit bg-[var(--cb-ink)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--paper)] underline-offset-4 hover:underline"
                 >
                   Open
                 </Link>
@@ -142,7 +142,7 @@ export default function SystemCoherencePage() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+                    className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
                   >
                     {item.label}
                   </Link>
@@ -153,7 +153,7 @@ export default function SystemCoherencePage() {
         </section>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Intentionally gated
             </h2>
@@ -164,7 +164,7 @@ export default function SystemCoherencePage() {
             </ul>
           </div>
 
-          <div className="border border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
+          <div className="border-[1.5px] border-[var(--cb-border)] bg-[var(--cb-surface)] p-6 sm:p-8">
             <h2 className="cb-display text-3xl text-[var(--cb-ink)]">
               Deep archive
             </h2>
@@ -183,25 +183,25 @@ export default function SystemCoherencePage() {
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
               href="/start"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               Start
             </Link>
             <Link
               href="/docs"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               Docs
             </Link>
             <Link
               href="/review"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               Review
             </Link>
             <Link
               href="/funding"
-              className="rounded-full border border-[var(--cb-border)] bg-white px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
+              className=" border-[1.5px] border-[var(--cb-border)] bg-[var(--paper-2)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--cb-muted)] underline-offset-4 hover:underline"
             >
               Funding
             </Link>

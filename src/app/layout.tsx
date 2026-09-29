@@ -1,23 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
 import { siteMeta, siteThemeColor } from "@/content/site-copy";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const displaySerif = Newsreader({
-  variable: "--font-display-serif",
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -49,10 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${displaySerif.variable} h-full scroll-smooth antialiased`}
-    >
+    <html lang="en" className="h-full scroll-smooth antialiased">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

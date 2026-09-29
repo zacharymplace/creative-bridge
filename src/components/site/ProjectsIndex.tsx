@@ -21,7 +21,7 @@ export function ProjectsIndex() {
                 </div>
                 <Link
                   href={`/projects/${p.slug}`}
-                  className="inline-flex h-11 shrink-0 items-center justify-center border border-[var(--cb-ink)] px-6 text-sm font-medium text-[var(--cb-ink)] transition-colors hover:bg-[var(--cb-ink)] hover:text-[var(--cb-canvas)]"
+                  className="inline-flex h-11 shrink-0 items-center justify-center border-[1.5px] border-[var(--cb-ink)] px-6 text-sm font-medium text-[var(--cb-ink)] transition-colors hover:bg-[var(--cb-ink)] hover:text-[var(--cb-canvas)]"
                 >
                   Open profile
                 </Link>

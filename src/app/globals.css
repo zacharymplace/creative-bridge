@@ -1,34 +1,35 @@
-@import "tailwindcss";
+@import "./house-style.css";
+@import "tailwindcss" important;
 
 :root {
-  --cb-canvas: #f7f7f5;
-  --cb-surface: #ffffff;
-  --cb-ink: #0c0c0c;
-  --cb-body: #3f3f3f;
-  --cb-muted: #737373;
-  --cb-border: #e7e7e4;
-  --cb-border-strong: #d4d4d0;
-  --cb-canvas-muted: rgba(255, 255, 255, 0.72);
+  --cb-canvas: var(--paper);
+  --cb-surface: transparent;
+  --cb-paper: var(--paper);
+  --cb-ink: var(--ink);
+  --cb-body: var(--ink-2);
+  --cb-muted: var(--ink-muted);
+  --cb-border: var(--rule-strong);
+  --cb-border-strong: var(--rule-strong);
+  --cb-canvas-muted: var(--paper-3);
 }
 
 @theme inline {
-  --color-background: var(--cb-canvas);
-  --color-foreground: var(--cb-ink);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-display: var(--font-display-serif);
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-body);
 }
 
 body {
-  background: var(--cb-canvas);
   color: var(--cb-ink);
-  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .cb-display {
-  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-family: var(--font-display);
   font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.98;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
 }
 
 .cb-eyebrow {
